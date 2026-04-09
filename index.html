@@ -11,9 +11,6 @@ header{background:#1a1a2e;padding:14px 24px;display:flex;justify-content:space-b
 header h1{font-size:18px;color:#fff;letter-spacing:.5px}
 .hdr-right{display:flex;align-items:center;gap:14px}
 #lastUpdated{font-size:11px;color:#888}
-#refreshBtn{background:#00d4ff;color:#000;border:none;padding:7px 14px;border-radius:4px;cursor:pointer;font-weight:600;font-size:12px}
-#refreshBtn:hover{background:#00b8e6}
-#refreshBtn:disabled{background:#444;cursor:not-allowed;color:#888}
 .status-bar{background:#16213e;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;border-bottom:1px solid #2d2d44}
 .vix-display{display:flex;align-items:center;gap:10px}
 .vix-label{font-size:12px;color:#888;font-weight:700;text-transform:uppercase;letter-spacing:1px}
@@ -57,8 +54,7 @@ header h1{font-size:18px;color:#fff;letter-spacing:.5px}
 .res-list a:hover{text-decoration:underline}
 .res-list li{font-size:12px;color:#666}
 .footer{font-size:10px;color:#444;text-align:center;margin-top:20px;padding:10px}
-.spinner{display:inline-block;width:14px;height:14px;border:2px solid #333;border-top:2px solid #00d4ff;border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle;margin-left:6px}
-@keyframes spin{to{transform:rotate(360deg)}}
+
 .err-msg{color:#ff4757;font-size:11px;padding:8px 24px;background:#1a1a2e;text-align:center}
 @media(max-width:768px){
   header{flex-direction:column;gap:6px;padding:10px 16px}
@@ -76,7 +72,6 @@ header h1{font-size:18px;color:#fff;letter-spacing:.5px}
   <h1>📊 Market Dashboard</h1>
   <div class="hdr-right">
     <span id="lastUpdated">--</span>
-    <button id="refreshBtn" onclick="refreshData()">⟳ Refresh</button>
   </div>
 </header>
 
@@ -377,10 +372,7 @@ function renderAll(data) {
 async function refreshData() {
   if (isRefreshing) return;
   isRefreshing = true;
-  const btn = document.getElementById('refreshBtn');
   const errBar = document.getElementById('errorBar');
-  btn.disabled = true;
-  btn.innerHTML = '⟳ Loading<span class="spinner"></span>';
   errBar.innerHTML = '';
 
   let data = null;
@@ -413,8 +405,6 @@ async function refreshData() {
     document.getElementById('lastUpdated').textContent = 'Updated: ' + new Date().toLocaleString();
   }
 
-  btn.disabled = false;
-  btn.innerHTML = '⟳ Refresh';
   isRefreshing = false;
 }
 
