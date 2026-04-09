@@ -1,10 +1,10 @@
 {
-  "updated": "2026-04-09 20:26:22",
+  "updated": "2026-04-09 21:12:30",
   "data": {
     "^VIX": {
-      "price": 19.6,
-      "change": -1.44,
-      "changePct": -6.8441,
+      "price": 19.49,
+      "change": -1.55,
+      "changePct": -7.3669,
       "high52": 57.96,
       "low52": 13.38,
       "volume": 0,
@@ -17,7 +17,7 @@
       "changePct": 0.5758,
       "high52": 50512.79,
       "low52": 37103.86,
-      "volume": 444146345,
+      "volume": 445240684,
       "currency": "USD",
       "name": "Dow Jones Industrial Average"
     },
@@ -27,7 +27,7 @@
       "changePct": 0.7184,
       "high52": 26182.1,
       "low52": 16850.18,
-      "volume": 1217877000,
+      "volume": 1223292000,
       "currency": "USD",
       "name": "NASDAQ-100"
     },
@@ -37,7 +37,7 @@
       "changePct": 0.617,
       "high52": 7002.28,
       "low52": 4910.42,
-      "volume": 2972717000,
+      "volume": 2977422000,
       "currency": "USD",
       "name": "S&P 500"
     },
@@ -72,9 +72,9 @@
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C"
     },
     "USDSGD=X": {
-      "price": 1.2726,
-      "change": null,
-      "changePct": null,
+      "price": 1.2715,
+      "change": -0.003,
+      "changePct": -0.2393,
       "high52": 1.3536,
       "low52": 1.2588,
       "volume": 0,
@@ -147,7 +147,7 @@
       "changePct": -8.6154,
       "high52": 260.0,
       "low52": 95.79,
-      "volume": 11400628,
+      "volume": 11414253,
       "currency": "USD",
       "name": "Cloudflare, Inc."
     },
@@ -157,7 +157,7 @@
       "changePct": -1.8647,
       "high52": 29.79,
       "low52": 22.95,
-      "volume": 39689742,
+      "volume": 33546937,
       "currency": "USD",
       "name": "AT&T Inc."
     },
@@ -177,7 +177,7 @@
       "changePct": 5.6045,
       "high52": 258.6,
       "low52": 165.29,
-      "volume": 64946893,
+      "volume": 65490764,
       "currency": "USD",
       "name": "Amazon.com, Inc."
     },
@@ -207,7 +207,7 @@
       "changePct": 0.3039,
       "high52": 606.36,
       "low52": 234.6,
-      "volume": 4732954,
+      "volume": 5728693,
       "currency": "USD",
       "name": "UnitedHealth Group Incorporated"
     },
@@ -227,7 +227,7 @@
       "changePct": 4.6989,
       "high52": 62.08,
       "low52": 17.67,
-      "volume": 154293778,
+      "volume": 154727306,
       "currency": "USD",
       "name": "Intel Corporation"
     },
@@ -247,7 +247,7 @@
       "changePct": -2.6998,
       "high52": 29.55,
       "low52": 17.56,
-      "volume": 17020935,
+      "volume": 19502724,
       "currency": "USD",
       "name": "HP Inc."
     },
@@ -257,7 +257,7 @@
       "changePct": -0.9101,
       "high52": 28.75,
       "low52": 20.92,
-      "volume": 25347216,
+      "volume": 26091040,
       "currency": "USD",
       "name": "Pfizer Inc."
     },
@@ -272,12 +272,12 @@
       "name": "Palantir Technologies Inc."
     },
     "SPY": {
-      "price": 679.86,
-      "change": 3.85,
-      "changePct": 0.5695,
+      "price": 679.91,
+      "change": 3.9,
+      "changePct": 0.5769,
       "high52": 697.84,
-      "low52": 489.16,
-      "volume": 52281326,
+      "low52": 508.46,
+      "volume": 56268172,
       "currency": "USD",
       "name": "State Street SPDR S&P 500 ETF Trust"
     }
