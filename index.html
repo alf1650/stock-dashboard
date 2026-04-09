@@ -260,17 +260,6 @@ async function fetchAllData() {
   return results;
 }
 
-/* ── Load from data.json fallback ────────────────────────────── */
-async function loadFallbackData() {
-  try {
-    const r = await fetch('data.json');
-    if (!r.ok) throw new Error(r.status);
-    return await r.json();
-  } catch(e) {
-    return null;
-  }
-}
-
 /* ── Rendering ───────────────────────────────────────────────── */
 function renderVix(q) {
   const el = document.getElementById('vixValue');
@@ -379,25 +368,8 @@ async function refreshData() {
   try {
     data = await fetchAllData();
     dataCache = data;
-    // Save to localStorage
-    localStorage.setItem('stockDashData', JSON.stringify({ ts: Date.now(), data }));
   } catch(e) {
-    console.warn('Live fetch failed, trying data.json...');
-    const fb = await loadFallbackData();
-    if (fb) {
-      data = fb.data || fb;
-      errBar.innerHTML = '<div class="err-msg">⚠ Live data unavailable. Showing cached data from ' + (fb.updated || 'data.json') + '</div>';
-    } else {
-      // Try localStorage
-      const cached = localStorage.getItem('stockDashData');
-      if (cached) {
-        const parsed = JSON.parse(cached);
-        data = parsed.data;
-        errBar.innerHTML = '<div class="err-msg">⚠ Live data unavailable. Showing cached data from ' + new Date(parsed.ts).toLocaleString() + '</div>';
-      } else {
-        errBar.innerHTML = '<div class="err-msg">⚠ Could not fetch data. Run update.py to generate data.json, or try again later.</div>';
-      }
-    }
+    errBar.innerHTML = '<div class="err-msg">⚠ Could not fetch live data. Please try again later.</div>';
   }
 
   if (data) {
@@ -412,25 +384,6 @@ let isRefreshing = false;
 
 /* ── Init ────────────────────────────────────────────────────── */
 (async function init() {
-  // Try to show cached data first for instant render
-  const cached = localStorage.getItem('stockDashData');
-  if (cached) {
-    try {
-      const parsed = JSON.parse(cached);
-      renderAll(parsed.data);
-      document.getElementById('lastUpdated').textContent = 'Cached: ' + new Date(parsed.ts).toLocaleString();
-    } catch(e) {}
-  }
-
-  // Then try data.json for pre-built data
-  const fb = await loadFallbackData();
-  if (fb) {
-    const d = fb.data || fb;
-    renderAll(d);
-    document.getElementById('lastUpdated').textContent = 'From data.json: ' + (fb.updated || '--');
-  }
-
-  // Refresh live data on page load
   await refreshData();
 })();
 </script>
