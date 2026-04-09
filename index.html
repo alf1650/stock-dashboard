@@ -197,19 +197,28 @@ function cls(v) { return v>0?'pos':v<0?'neg':'neu'; }
 function vixCls(v) { return v<15?'vix-low':v<25?'vix-mid':v<35?'vix-high':'vix-extreme'; }
 
 /* ── Data fetching ───────────────────────────────────────────── */
-async function proxyFetch(url, retries=3) {
-  for (let attempt=0; attempt<retries; attempt++) {
-    for (const pFn of PROXIES) {
-      try {
-        const r = await fetch(pFn(url), { signal: AbortSignal.timeout(10000) });
-        if (!r.ok) throw new Error(r.status);
-        return await r.json();
-      } catch(e) { /* try next proxy */ }
+async function proxyFetch(url) {
+  // Race all proxies in parallel — fastest valid response wins
+  const raceWithRetry = async (attempt) => {
+    const controllers = PROXIES.map(() => new AbortController());
+    const promises = PROXIES.map((pFn, i) =>
+      fetch(pFn(url), { signal: controllers[i].signal })
+        .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    );
+    try {
+      const result = await Promise.any(promises);
+      // Abort remaining requests
+      controllers.forEach(c => c.abort());
+      return result;
+    } catch(e) {
+      if (attempt < 2) {
+        await new Promise(r => setTimeout(r, 300));
+        return raceWithRetry(attempt + 1);
+      }
+      throw new Error('All proxies failed');
     }
-    // Brief pause before retrying all proxies
-    if (attempt < retries-1) await new Promise(r => setTimeout(r, 500));
-  }
-  throw new Error('All proxies failed after retries');
+  };
+  return raceWithRetry(0);
 }
 
 async function fetchQuote(symbol) {
