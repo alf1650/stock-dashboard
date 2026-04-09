@@ -14,6 +14,9 @@ header h1{font-size:18px;color:#fff;letter-spacing:.5px}
 #refreshBtn{background:#00d4ff;color:#000;border:none;padding:7px 14px;border-radius:4px;cursor:pointer;font-weight:600;font-size:12px}
 #refreshBtn:hover{background:#00b8e6}
 #refreshBtn:disabled{background:#444;cursor:not-allowed;color:#888}
+#pauseBtn{background:transparent;color:#888;border:1px solid #444;padding:7px 10px;border-radius:4px;cursor:pointer;font-size:12px}
+#pauseBtn:hover{border-color:#00d4ff;color:#00d4ff}
+.countdown{font-size:11px;color:#555;font-family:'SF Mono',Monaco,Menlo,monospace;min-width:28px;text-align:center}
 .status-bar{background:#16213e;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;border-bottom:1px solid #2d2d44}
 .vix-display{display:flex;align-items:center;gap:10px}
 .vix-label{font-size:12px;color:#888;font-weight:700;text-transform:uppercase;letter-spacing:1px}
@@ -76,7 +79,9 @@ header h1{font-size:18px;color:#fff;letter-spacing:.5px}
   <h1>📊 Market Dashboard</h1>
   <div class="hdr-right">
     <span id="lastUpdated">--</span>
+    <span id="countdown" class="countdown"></span>
     <button id="refreshBtn" onclick="refreshData()">⟳ Refresh</button>
+    <button id="pauseBtn" onclick="toggleAutoRefresh()" title="Pause/resume auto-refresh">⏸</button>
   </div>
 </header>
 
@@ -177,7 +182,10 @@ const USDSGD = { yahoo:'USDSGD=X' };
 const PROXIES = [
   u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
   u => `https://corsproxy.io/?${encodeURIComponent(u)}`,
+  u => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(u)}`,
 ];
+
+const AUTO_REFRESH_SEC = 60;
 
 /* ── Helpers ─────────────────────────────────────────────────── */
 function fmt(n, d=2) {
@@ -372,6 +380,8 @@ function renderAll(data) {
 
 /* ── Refresh logic ───────────────────────────────────────────── */
 async function refreshData() {
+  if (isRefreshing) return;
+  isRefreshing = true;
   const btn = document.getElementById('refreshBtn');
   const errBar = document.getElementById('errorBar');
   btn.disabled = true;
@@ -410,6 +420,44 @@ async function refreshData() {
 
   btn.disabled = false;
   btn.innerHTML = '⟳ Refresh';
+  isRefreshing = false;
+  if (autoRefreshOn) { countdownSec = AUTO_REFRESH_SEC; updateCountdownDisplay(); }
+}
+
+/* ── Auto-refresh ────────────────────────────────────────────── */
+let autoRefreshOn = true;
+let countdownSec = AUTO_REFRESH_SEC;
+let countdownTimer = null;
+let isRefreshing = false;
+
+function startCountdown() {
+  clearInterval(countdownTimer);
+  countdownSec = AUTO_REFRESH_SEC;
+  updateCountdownDisplay();
+  countdownTimer = setInterval(() => {
+    if (!autoRefreshOn) return;
+    countdownSec--;
+    updateCountdownDisplay();
+    if (countdownSec <= 0) {
+      countdownSec = AUTO_REFRESH_SEC;
+      if (!isRefreshing) refreshData();
+    }
+  }, 1000);
+}
+
+function updateCountdownDisplay() {
+  const el = document.getElementById('countdown');
+  if (!autoRefreshOn) { el.textContent = 'paused'; return; }
+  el.textContent = countdownSec + 's';
+}
+
+function toggleAutoRefresh() {
+  autoRefreshOn = !autoRefreshOn;
+  const btn = document.getElementById('pauseBtn');
+  btn.textContent = autoRefreshOn ? '⏸' : '▶';
+  btn.title = autoRefreshOn ? 'Pause auto-refresh' : 'Resume auto-refresh';
+  if (autoRefreshOn) startCountdown();
+  else updateCountdownDisplay();
 }
 
 /* ── Init ────────────────────────────────────────────────────── */
@@ -432,8 +480,9 @@ async function refreshData() {
     document.getElementById('lastUpdated').textContent = 'From data.json: ' + (fb.updated || '--');
   }
 
-  // Then attempt live refresh
-  refreshData();
+  // Initial live refresh, then auto-refresh timer
+  await refreshData();
+  startCountdown();
 })();
 </script>
 </body>
