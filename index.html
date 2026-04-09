@@ -197,15 +197,19 @@ function cls(v) { return v>0?'pos':v<0?'neg':'neu'; }
 function vixCls(v) { return v<15?'vix-low':v<25?'vix-mid':v<35?'vix-high':'vix-extreme'; }
 
 /* ── Data fetching ───────────────────────────────────────────── */
-async function proxyFetch(url) {
-  for (const pFn of PROXIES) {
-    try {
-      const r = await fetch(pFn(url));
-      if (!r.ok) throw new Error(r.status);
-      return await r.json();
-    } catch(e) { /* try next */ }
+async function proxyFetch(url, retries=3) {
+  for (let attempt=0; attempt<retries; attempt++) {
+    for (const pFn of PROXIES) {
+      try {
+        const r = await fetch(pFn(url), { signal: AbortSignal.timeout(10000) });
+        if (!r.ok) throw new Error(r.status);
+        return await r.json();
+      } catch(e) { /* try next proxy */ }
+    }
+    // Brief pause before retrying all proxies
+    if (attempt < retries-1) await new Promise(r => setTimeout(r, 500));
   }
-  throw new Error('All proxies failed');
+  throw new Error('All proxies failed after retries');
 }
 
 async function fetchQuote(symbol) {
@@ -241,9 +245,9 @@ async function fetchAllData() {
   ];
 
   const results = {};
-  // Fetch in parallel, batches of 6 to avoid overloading proxy
-  for (let i=0; i<allSymbols.length; i+=6) {
-    const batch = allSymbols.slice(i, i+6);
+  // Fetch in parallel, batches of 3 to avoid overloading proxy
+  for (let i=0; i<allSymbols.length; i+=3) {
+    const batch = allSymbols.slice(i, i+3);
     const promises = batch.map(async sym => {
       try {
         results[sym] = await fetchQuote(sym);
