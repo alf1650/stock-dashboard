@@ -1,10 +1,10 @@
 {
-  "updated": "2026-04-10 20:19:59",
+  "updated": "2026-04-10 21:04:32",
   "data": {
     "^VIX": {
-      "price": 19.33,
-      "change": -0.16,
-      "changePct": -0.8209,
+      "price": 19.23,
+      "change": -0.26,
+      "changePct": -1.334,
       "high52": 46.12,
       "low52": 13.38,
       "volume": 0,
@@ -17,7 +17,7 @@
       "changePct": -0.5587,
       "high52": 50512.79,
       "low52": 37830.66,
-      "volume": 477062970,
+      "volume": 478304657,
       "currency": "USD",
       "name": "Dow Jones Industrial Average"
     },
@@ -27,7 +27,7 @@
       "changePct": 0.1365,
       "high52": 26182.1,
       "low52": 17592.92,
-      "volume": 1181727000,
+      "volume": 1183922000,
       "currency": "USD",
       "name": "NASDAQ-100"
     },
@@ -37,7 +37,7 @@
       "changePct": -0.1139,
       "high52": 7002.28,
       "low52": 5101.63,
-      "volume": 2775574000,
+      "volume": 2781393000,
       "currency": "USD",
       "name": "S&P 500"
     },
@@ -72,7 +72,7 @@
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C"
     },
     "USDSGD=X": {
-      "price": 1.2732,
+      "price": 1.2733,
       "change": null,
       "changePct": null,
       "high52": 1.3288,
@@ -147,7 +147,7 @@
       "changePct": -13.4991,
       "high52": 260.0,
       "low52": 100.25,
-      "volume": 13665113,
+      "volume": 13709871,
       "currency": "USD",
       "name": "Cloudflare, Inc."
     },
@@ -157,7 +157,7 @@
       "changePct": -1.4158,
       "high52": 29.79,
       "low52": 22.95,
-      "volume": 28048152,
+      "volume": 31965302,
       "currency": "USD",
       "name": "AT&T Inc."
     },
@@ -167,7 +167,7 @@
       "changePct": -0.5897,
       "high52": 555.45,
       "low52": 355.67,
-      "volume": 26430828,
+      "volume": 27933678,
       "currency": "USD",
       "name": "Microsoft Corporation"
     },
@@ -217,7 +217,7 @@
       "changePct": 0.9119,
       "high52": 9.39,
       "low52": 2.36,
-      "volume": 18103002,
+      "volume": 18134860,
       "currency": "USD",
       "name": "BigBear.ai Holdings, Inc."
     },
@@ -257,7 +257,7 @@
       "changePct": -1.1021,
       "high52": 28.75,
       "low52": 21.28,
-      "volume": 22839600,
+      "volume": 27801957,
       "currency": "USD",
       "name": "Pfizer Inc."
     },
@@ -272,12 +272,12 @@
       "name": "Palantir Technologies Inc."
     },
     "SPY": {
-      "price": 679.525,
-      "change": -0.385,
-      "changePct": -0.0566,
+      "price": 679.46,
+      "change": -0.45,
+      "changePct": -0.0662,
       "high52": 697.84,
       "low52": 508.46,
-      "volume": 40899977,
+      "volume": 41606521,
       "currency": "USD",
       "name": "State Street SPDR S&P 500 ETF Trust"
     }
