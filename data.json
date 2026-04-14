@@ -1,10 +1,10 @@
 {
-  "updated": "2026-04-14 20:08:55",
+  "updated": "2026-04-14 21:09:02",
   "data": {
     "^VIX": {
-      "price": 18.45,
-      "change": -0.67,
-      "changePct": -3.5042,
+      "price": 18.36,
+      "change": -0.76,
+      "changePct": -3.9749,
       "high52": 35.75,
       "low52": 13.38,
       "volume": 0,
@@ -17,7 +17,7 @@
       "changePct": 0.659,
       "high52": 50512.79,
       "low52": 37830.66,
-      "volume": 524421205,
+      "volume": 527919024,
       "currency": "USD",
       "name": "Dow Jones Industrial Average"
     },
@@ -27,7 +27,7 @@
       "changePct": 1.8054,
       "high52": 26182.1,
       "low52": 17592.92,
-      "volume": 1198099000,
+      "volume": 1213827000,
       "currency": "USD",
       "name": "NASDAQ-100"
     },
@@ -37,14 +37,14 @@
       "changePct": 1.1783,
       "high52": 7002.28,
       "low52": 5101.63,
-      "volume": 3000763000,
+      "volume": 3024825000,
       "currency": "USD",
       "name": "S&P 500"
     },
     "^RUT": {
-      "price": 2704.368,
-      "change": 33.878,
-      "changePct": 1.2686,
+      "price": 2705.668,
+      "change": 35.178,
+      "changePct": 1.3173,
       "high52": 2735.1,
       "low52": 1823.38,
       "volume": 0,
@@ -72,9 +72,9 @@
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C"
     },
     "USDSGD=X": {
-      "price": 1.2714,
-      "change": null,
-      "changePct": null,
+      "price": 1.271,
+      "change": -0.0005,
+      "changePct": -0.0393,
       "high52": 1.3187,
       "low52": 1.2588,
       "volume": 0,
@@ -122,9 +122,9 @@
       "name": "Oversea-Chinese Banking Corporation Limited"
     },
     "HST": {
-      "price": 20.907,
-      "change": 0.637,
-      "changePct": 3.1426,
+      "price": 20.91,
+      "change": 0.64,
+      "changePct": 3.1574,
       "high52": 21.0,
       "low52": 13.29,
       "volume": 12557540,
@@ -132,12 +132,12 @@
       "name": "Host Hotels & Resorts, Inc."
     },
     "BBY": {
-      "price": 62.065,
-      "change": 1.215,
-      "changePct": 1.9967,
+      "price": 62.06,
+      "change": 1.21,
+      "changePct": 1.9885,
       "high52": 84.99,
       "low52": 59.16,
-      "volume": 2275236,
+      "volume": 2916140,
       "currency": "USD",
       "name": "Best Buy Co., Inc."
     },
@@ -152,9 +152,9 @@
       "name": "Cloudflare, Inc."
     },
     "T": {
-      "price": 25.63,
-      "change": 0.02,
-      "changePct": 0.0781,
+      "price": 25.62,
+      "change": 0.01,
+      "changePct": 0.039,
       "high52": 29.79,
       "low52": 22.95,
       "volume": 33044007,
@@ -162,12 +162,12 @@
       "name": "AT&T Inc."
     },
     "MSFT": {
-      "price": 393.006,
-      "change": 8.636,
-      "changePct": 2.2468,
+      "price": 393.11,
+      "change": 8.74,
+      "changePct": 2.2739,
       "high52": 555.45,
       "low52": 355.67,
-      "volume": 35200044,
+      "volume": 36999810,
       "currency": "USD",
       "name": "Microsoft Corporation"
     },
@@ -182,29 +182,29 @@
       "name": "Amazon.com, Inc."
     },
     "NOW": {
-      "price": 87.81,
-      "change": -1.25,
-      "changePct": -1.4035,
+      "price": 87.79,
+      "change": -1.27,
+      "changePct": -1.426,
       "high52": 211.478,
       "low52": 81.24,
-      "volume": 20782876,
+      "volume": 24895807,
       "currency": "USD",
       "name": "ServiceNow, Inc."
     },
     "NFLX": {
-      "price": 106.24,
-      "change": 3.08,
-      "changePct": 2.9856,
+      "price": 106.28,
+      "change": 3.12,
+      "changePct": 3.0244,
       "high52": 134.115,
       "low52": 75.01,
-      "volume": 38109082,
+      "volume": 40183141,
       "currency": "USD",
       "name": "Netflix, Inc."
     },
     "UNH": {
-      "price": 314.32,
-      "change": 1.32,
-      "changePct": 0.4217,
+      "price": 314.19,
+      "change": 1.19,
+      "changePct": 0.3802,
       "high52": 594.81,
       "low52": 234.6,
       "volume": 4530095,
@@ -212,9 +212,9 @@
       "name": "UnitedHealth Group Incorporated"
     },
     "BBAI": {
-      "price": 3.53,
-      "change": 0.18,
-      "changePct": 5.3731,
+      "price": 3.52,
+      "change": 0.17,
+      "changePct": 5.0746,
       "high52": 9.39,
       "low52": 2.36,
       "volume": 22819787,
@@ -222,19 +222,19 @@
       "name": "BigBear.ai Holdings, Inc."
     },
     "INTC": {
-      "price": 63.805,
-      "change": -1.375,
-      "changePct": -2.1095,
+      "price": 63.81,
+      "change": -1.37,
+      "changePct": -2.1019,
       "high52": 65.65,
       "low52": 18.25,
-      "volume": 109703948,
+      "volume": 111824374,
       "currency": "USD",
       "name": "Intel Corporation"
     },
     "NKE": {
-      "price": 44.19,
-      "change": 1.28,
-      "changePct": 2.983,
+      "price": 44.2,
+      "change": 1.29,
+      "changePct": 3.0063,
       "high52": 80.17,
       "low52": 42.09,
       "volume": 18288881,
@@ -242,42 +242,42 @@
       "name": "NIKE, Inc."
     },
     "HPQ": {
-      "price": 19.0,
-      "change": -0.23,
-      "changePct": -1.196,
+      "price": 18.99,
+      "change": -0.24,
+      "changePct": -1.248,
       "high52": 29.55,
       "low52": 17.56,
-      "volume": 13815444,
+      "volume": 16721040,
       "currency": "USD",
       "name": "HP Inc."
     },
     "PFE": {
-      "price": 27.13,
-      "change": -0.21,
-      "changePct": -0.7681,
+      "price": 27.11,
+      "change": -0.23,
+      "changePct": -0.8413,
       "high52": 28.75,
       "low52": 21.87,
-      "volume": 18706508,
+      "volume": 23919931,
       "currency": "USD",
       "name": "Pfizer Inc."
     },
     "PLTR": {
-      "price": 135.688,
-      "change": 3.318,
-      "changePct": 2.5066,
+      "price": 135.7,
+      "change": 3.33,
+      "changePct": 2.5157,
       "high52": 207.52,
       "low52": 89.31,
-      "volume": 51213365,
+      "volume": 52314107,
       "currency": "USD",
       "name": "Palantir Technologies Inc."
     },
     "SPY": {
-      "price": 694.223,
-      "change": 8.123,
-      "changePct": 1.1839,
+      "price": 694.46,
+      "change": 8.36,
+      "changePct": 1.2185,
       "high52": 697.84,
       "low52": 508.46,
-      "volume": 55645729,
+      "volume": 59884831,
       "currency": "USD",
       "name": "State Street SPDR S&P 500 ETF Trust"
     }
