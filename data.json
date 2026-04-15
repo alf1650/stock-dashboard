@@ -1,10 +1,10 @@
 {
-  "updated": "2026-04-15 20:06:07",
+  "updated": "2026-04-15 21:07:58",
   "data": {
     "^VIX": {
-      "price": 18.07,
-      "change": -0.29,
-      "changePct": -1.5795,
+      "price": 18.17,
+      "change": -0.19,
+      "changePct": -1.0349,
       "high52": 35.75,
       "low52": 13.38,
       "volume": 0,
@@ -17,7 +17,7 @@
       "changePct": -0.1489,
       "high52": 50512.79,
       "low52": 37830.66,
-      "volume": 526959988,
+      "volume": 529878644,
       "currency": "USD",
       "name": "Dow Jones Industrial Average"
     },
@@ -27,7 +27,7 @@
       "changePct": 1.4031,
       "high52": 26214.568,
       "low52": 17592.92,
-      "volume": 1210997000,
+      "volume": 1221456000,
       "currency": "USD",
       "name": "NASDAQ-100"
     },
@@ -37,14 +37,14 @@
       "changePct": 0.7976,
       "high52": 7026.24,
       "low52": 5101.63,
-      "volume": 3048075000,
+      "volume": 3062289000,
       "currency": "USD",
       "name": "S&P 500"
     },
     "^RUT": {
-      "price": 2710.3098,
-      "change": 4.6399,
-      "changePct": 0.1715,
+      "price": 2713.6633,
+      "change": 7.9934,
+      "changePct": 0.2954,
       "high52": 2735.1,
       "low52": 1823.38,
       "volume": 0,
@@ -72,9 +72,9 @@
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C"
     },
     "USDSGD=X": {
-      "price": 1.2711,
-      "change": null,
-      "changePct": null,
+      "price": 1.2708,
+      "change": 0.0,
+      "changePct": 0.0008,
       "high52": 1.3181,
       "low52": 1.2588,
       "volume": 0,
@@ -132,9 +132,9 @@
       "name": "Host Hotels & Resorts, Inc."
     },
     "BBY": {
-      "price": 63.42,
-      "change": 1.36,
-      "changePct": 2.1914,
+      "price": 63.39,
+      "change": 1.33,
+      "changePct": 2.1431,
       "high52": 84.99,
       "low52": 59.16,
       "volume": 2293263,
@@ -142,22 +142,22 @@
       "name": "Best Buy Co., Inc."
     },
     "NET": {
-      "price": 190.1,
-      "change": 11.45,
-      "changePct": 6.4092,
+      "price": 190.13,
+      "change": 11.48,
+      "changePct": 6.426,
       "high52": 260.0,
       "low52": 100.25,
-      "volume": 4727777,
+      "volume": 5208879,
       "currency": "USD",
       "name": "Cloudflare, Inc."
     },
     "T": {
-      "price": 25.47,
-      "change": -0.15,
-      "changePct": -0.5855,
+      "price": 25.46,
+      "change": -0.16,
+      "changePct": -0.6245,
       "high52": 29.79,
       "low52": 22.95,
-      "volume": 24499186,
+      "volume": 32579216,
       "currency": "USD",
       "name": "AT&T Inc."
     },
@@ -177,17 +177,17 @@
       "changePct": -0.2088,
       "high52": 258.6,
       "low52": 165.29,
-      "volume": 40326061,
+      "volume": 42574235,
       "currency": "USD",
       "name": "Amazon.com, Inc."
     },
     "NOW": {
-      "price": 94.194,
-      "change": 6.404,
-      "changePct": 7.2947,
+      "price": 94.19,
+      "change": 6.4,
+      "changePct": 7.2901,
       "high52": 211.478,
       "low52": 81.24,
-      "volume": 22995708,
+      "volume": 25676225,
       "currency": "USD",
       "name": "ServiceNow, Inc."
     },
@@ -202,9 +202,9 @@
       "name": "Netflix, Inc."
     },
     "UNH": {
-      "price": 314.09,
-      "change": -0.1,
-      "changePct": -0.0318,
+      "price": 314.05,
+      "change": -0.14,
+      "changePct": -0.0446,
       "high52": 594.81,
       "low52": 234.6,
       "volume": 4152289,
@@ -212,9 +212,9 @@
       "name": "UnitedHealth Group Incorporated"
     },
     "BBAI": {
-      "price": 3.795,
-      "change": 0.275,
-      "changePct": 7.8125,
+      "price": 3.79,
+      "change": 0.27,
+      "changePct": 7.6705,
       "high52": 9.39,
       "low52": 2.36,
       "volume": 36627593,
@@ -227,24 +227,24 @@
       "changePct": 1.7709,
       "high52": 65.84,
       "low52": 18.25,
-      "volume": 88977696,
+      "volume": 91456270,
       "currency": "USD",
       "name": "Intel Corporation"
     },
     "NKE": {
-      "price": 45.47,
-      "change": 1.27,
-      "changePct": 2.8733,
+      "price": 45.44,
+      "change": 1.24,
+      "changePct": 2.8054,
       "high52": 80.17,
       "low52": 42.09,
-      "volume": 28764662,
+      "volume": 31181739,
       "currency": "USD",
       "name": "NIKE, Inc."
     },
     "HPQ": {
-      "price": 19.235,
-      "change": 0.245,
-      "changePct": 1.2902,
+      "price": 19.23,
+      "change": 0.24,
+      "changePct": 1.2638,
       "high52": 29.55,
       "low52": 17.56,
       "volume": 10042943,
@@ -267,17 +267,17 @@
       "changePct": 4.7531,
       "high52": 207.52,
       "low52": 89.31,
-      "volume": 47181665,
+      "volume": 47901983,
       "currency": "USD",
       "name": "Palantir Technologies Inc."
     },
     "SPY": {
-      "price": 699.89,
-      "change": 5.43,
-      "changePct": 0.7819,
+      "price": 699.94,
+      "change": 5.48,
+      "changePct": 0.7891,
       "high52": 700.28,
       "low52": 508.46,
-      "volume": 50747981,
+      "volume": 57435208,
       "currency": "USD",
       "name": "State Street SPDR S&P 500 ETF Trust"
     }
