@@ -1,10 +1,10 @@
 {
-  "updated": "2026-04-16 10:24:38",
+  "updated": "2026-04-16 07:54:58",
   "data": {
     "^VIX": {
-      "price": 18.17,
-      "change": -0.19,
-      "changePct": -1.0349,
+      "price": 18.0,
+      "change": -0.17,
+      "changePct": -0.9356,
       "high52": 35.75,
       "low52": 13.38,
       "volume": 0,
@@ -35,7 +35,7 @@
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 26214.57,
-      "athDate": "2026-04-15"
+      "athDate": "2026-04-01"
     },
     "^GSPC": {
       "price": 7022.95,
@@ -47,11 +47,11 @@
       "currency": "USD",
       "name": "S&P 500",
       "ath": 7026.24,
-      "athDate": "2026-04-15"
+      "athDate": "2026-03-01"
     },
     "^RUT": {
-      "price": 2713.6633,
-      "change": 7.9934,
+      "price": 2713.663,
+      "change": 7.9931,
       "changePct": 0.2954,
       "high52": 2735.1,
       "low52": 1823.38,
@@ -62,31 +62,31 @@
       "athDate": "2025-12-01"
     },
     "VWRA.L": {
-      "price": 177.9,
-      "change": 0.6,
-      "changePct": 0.3384,
+      "price": 178.98,
+      "change": 1.08,
+      "changePct": 0.6071,
       "high52": 202.3,
-      "low52": 0.0,
-      "volume": 11985,
+      "low52": 130.6,
+      "volume": 9746,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF",
       "ath": 202.3,
       "athDate": "2025-12-29"
     },
     "XNAS.L": {
-      "price": 60.3,
-      "change": 0.77,
-      "changePct": 1.2935,
-      "high52": 60.63,
-      "low52": 0.0,
-      "volume": 565,
+      "price": 61.02,
+      "change": 0.72,
+      "changePct": 1.194,
+      "high52": 61.02,
+      "low52": 41.425,
+      "volume": 1841,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
-      "ath": 60.63,
-      "athDate": "2026-01-26"
+      "ath": 61.02,
+      "athDate": "2026-04-16"
     },
     "USDSGD=X": {
-      "price": 1.2701,
+      "price": 1.2705,
       "change": null,
       "changePct": null,
       "high52": 1.3165,
@@ -98,52 +98,52 @@
       "athDate": "2004-04-30"
     },
     "C6L.SI": {
-      "price": 6.63,
-      "change": 0.06,
-      "changePct": 0.9132,
+      "price": 6.59,
+      "change": 0.02,
+      "changePct": 0.3044,
       "high52": 7.63,
       "low52": 6.23,
-      "volume": 2311600,
+      "volume": 4254900,
       "currency": "SGD",
       "name": "Singapore Airlines Limited",
       "ath": 14.23,
       "athDate": "2007-09-30"
     },
     "U11.SI": {
-      "price": 37.52,
-      "change": -0.07,
-      "changePct": -0.1862,
+      "price": 37.54,
+      "change": -0.05,
+      "changePct": -0.133,
       "high52": 39.5,
       "low52": 33.25,
-      "volume": 499800,
+      "volume": 1119900,
       "currency": "SGD",
       "name": "United Overseas Bank Limited",
       "ath": 39.5,
       "athDate": "2025-12-31"
     },
     "D05.SI": {
-      "price": 57.32,
-      "change": -0.38,
-      "changePct": -0.6586,
+      "price": 57.3,
+      "change": -0.4,
+      "changePct": -0.6932,
       "high52": 60.0,
       "low52": 39.71,
-      "volume": 1396900,
+      "volume": 4058600,
       "currency": "SGD",
       "name": "DBS Group Holdings Ltd",
       "ath": 60.0,
       "athDate": "2025-12-31"
     },
     "O39.SI": {
-      "price": 22.79,
-      "change": -0.09,
-      "changePct": -0.3934,
+      "price": 22.74,
+      "change": -0.14,
+      "changePct": -0.6119,
       "high52": 23.1,
       "low52": 15.6,
-      "volume": 1513600,
+      "volume": 4330600,
       "currency": "SGD",
       "name": "Oversea-Chinese Banking Corporation Limited",
-      "ath": 23.0,
-      "athDate": "2026-04-16"
+      "ath": 23.1,
+      "athDate": "2026-03-31"
     },
     "HST": {
       "price": 20.69,
@@ -335,7 +335,7 @@
       "currency": "USD",
       "name": "State Street SPDR S&P 500 ETF Trust",
       "ath": 700.28,
-      "athDate": "2026-04-15"
+      "athDate": "2026-04-01"
     }
   }
 }
