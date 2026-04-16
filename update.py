@@ -69,14 +69,36 @@ def fetch_quote(yahoo_symbol):
     }
 
 
+def fetch_ath(yahoo_symbol):
+    """Fetch the all-time high price using max available history."""
+    url = f"{YAHOO_BASE}/{urllib.parse.quote(yahoo_symbol)}?interval=1mo&range=max"
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=15) as resp:
+        data = json.loads(resp.read())
+    result = data["chart"]["result"][0]
+    highs = result["indicators"]["quote"][0].get("high", [])
+    valid = [h for h in highs if h is not None]
+    if not valid:
+        return None
+    return round(max(valid), 2)
+
+
 def main():
     results = {}
     for yahoo_sym, label in SYMBOLS.items():
         try:
             q = fetch_quote(yahoo_sym)
+            # Fetch ATH from max history
+            try:
+                ath = fetch_ath(yahoo_sym)
+                q["ath"] = ath
+            except Exception as e2:
+                print(f"  ⚠ {label:6s}  ATH fetch failed – {e2}")
+                q["ath"] = None
             results[yahoo_sym] = q
             sign = "+" if (q["change"] or 0) >= 0 else ""
-            print(f"  ✓ {label:6s}  {q['price']:>12.2f}  {sign}{q.get('change', 0) or 0:.2f}")
+            ath_str = f"  ATH: {q['ath']}" if q.get("ath") else ""
+            print(f"  ✓ {label:6s}  {q['price']:>12.2f}  {sign}{q.get('change', 0) or 0:.2f}{ath_str}")
         except Exception as e:
             print(f"  ✗ {label:6s}  FAILED – {e}")
             results[yahoo_sym] = None

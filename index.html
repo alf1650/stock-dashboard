@@ -395,8 +395,34 @@ async function refreshData() {
 
 let isRefreshing = false;
 
+/* ── Load ATH from data.json ──────────────────────────────────── */
+async function loadAthFromDataJson() {
+  try {
+    const resp = await fetch('data.json');
+    const json = await resp.json();
+    const d = json.data || {};
+    // Update INDICES recordHigh from ATH in data.json
+    INDICES.forEach(idx => {
+      const q = d[idx.yahoo];
+      if (q && q.ath != null) idx.recordHigh = q.ath;
+    });
+    // Update VIX recordHigh
+    const vq = d[VIX.yahoo];
+    if (vq && vq.ath != null) VIX.recordHigh = vq.ath;
+    // Update WATCHLIST rh from ATH in data.json
+    WATCHLIST.forEach(w => {
+      const q = d[w.yahoo];
+      if (q && q.ath != null) w.rh = q.ath;
+    });
+    console.log('ATH values loaded from data.json');
+  } catch(e) {
+    console.warn('Could not load ATH from data.json, using defaults:', e.message);
+  }
+}
+
 /* ── Init ────────────────────────────────────────────────────── */
 (async function init() {
+  await loadAthFromDataJson();
   await refreshData();
 })();
 </script>
