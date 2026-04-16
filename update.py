@@ -70,17 +70,24 @@ def fetch_quote(yahoo_symbol):
 
 
 def fetch_ath(yahoo_symbol):
-    """Fetch the all-time high price using max available history."""
+    """Fetch the all-time high price and its date using max available history."""
     url = f"{YAHOO_BASE}/{urllib.parse.quote(yahoo_symbol)}?interval=1mo&range=max"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=15) as resp:
         data = json.loads(resp.read())
     result = data["chart"]["result"][0]
     highs = result["indicators"]["quote"][0].get("high", [])
-    valid = [h for h in highs if h is not None]
-    if not valid:
-        return None
-    return round(max(valid), 2)
+    timestamps = result.get("timestamp", [])
+    best_price = None
+    best_ts = None
+    for i, h in enumerate(highs):
+        if h is not None and (best_price is None or h > best_price):
+            best_price = h
+            best_ts = timestamps[i] if i < len(timestamps) else None
+    if best_price is None:
+        return None, None
+    ath_date = datetime.utcfromtimestamp(best_ts).strftime("%Y-%m-%d") if best_ts else None
+    return round(best_price, 2), ath_date
 
 
 def main():
@@ -90,11 +97,13 @@ def main():
             q = fetch_quote(yahoo_sym)
             # Fetch ATH from max history
             try:
-                ath = fetch_ath(yahoo_sym)
+                ath, ath_date = fetch_ath(yahoo_sym)
                 q["ath"] = ath
+                q["athDate"] = ath_date
             except Exception as e2:
                 print(f"  ⚠ {label:6s}  ATH fetch failed – {e2}")
                 q["ath"] = None
+                q["athDate"] = None
             results[yahoo_sym] = q
             sign = "+" if (q["change"] or 0) >= 0 else ""
             ath_str = f"  ATH: {q['ath']}" if q.get("ath") else ""

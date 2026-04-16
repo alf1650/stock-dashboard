@@ -326,8 +326,8 @@ function renderIndexCard(idx, q) {
     <div class="price">${price!=null?fmt(price):'--'}</div>
     <div class="chg ${cls(change)}">${change!=null?`${change>=0?'+':''}${fmt(change)} (${fmtPct(changePct)})`:' --'}</div>
     <div class="stats">
-      <div><div class="st-label">10-Yr High</div><div class="st-val">${rh?fmt(rh):'--'}</div></div>
-      <div><div class="st-label">% From High</div><div class="st-val ${cls(pctHi)}">${pctHi!=null?fmtPct(pctHi):'--'}</div></div>
+      <div><div class="st-label">ATH${idx.athDate?' ('+idx.athDate+')':''}</div><div class="st-val">${rh?fmt(rh):'--'}</div></div>
+      <div><div class="st-label">% From ATH</div><div class="st-val ${cls(pctHi)}">${pctHi!=null?fmtPct(pctHi):'--'}</div></div>
     </div>
     ${corrHTML}
   </div>`;
@@ -356,7 +356,7 @@ function renderWatchlist(data) {
       <td class="${cls(change)}">${change!=null?(change>=0?'+':'')+fmt(change):'--'}</td>
       <td class="${cls(changePct)}">${changePct!=null?fmtPct(changePct):'--'}</td>
       <td>${high52!=null?fmt(high52):'--'}</td>
-      <td>${rh!=null?fmt(rh):'--'}</td>
+      <td>${rh!=null?fmt(rh):'--'}${w.athDate?' <span style="color:#b2bec3;font-size:10px">('+w.athDate+')</span>':''}</td>
       <td class="${cls(pctATH)}">${pctATH!=null?fmtPct(pctATH):'--'}</td>
       <td>--</td>
     </tr>`;
@@ -401,16 +401,18 @@ async function loadFromDataJson() {
     const resp = await fetch('data.json');
     const json = await resp.json();
     const d = json.data || {};
-    // Update ATH values
+    // Update ATH values and dates
     INDICES.forEach(idx => {
       const q = d[idx.yahoo];
       if (q && q.ath != null) idx.recordHigh = q.ath;
+      if (q && q.athDate) idx.athDate = q.athDate;
     });
     const vq = d[VIX.yahoo];
     if (vq && vq.ath != null) VIX.recordHigh = vq.ath;
     WATCHLIST.forEach(w => {
       const q = d[w.yahoo];
       if (q && q.ath != null) w.rh = q.ath;
+      if (q && q.athDate) w.athDate = q.athDate;
     });
     // Render immediately from cached data
     dataCache = d;
