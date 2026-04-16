@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-16 09:46:49",
+  "updated": "2026-04-16 10:00:06",
   "data": {
     "^VIX": {
       "price": 18.17,
@@ -79,7 +79,7 @@
       "ath": 60.63
     },
     "USDSGD=X": {
-      "price": 1.2703,
+      "price": 1.2701,
       "change": null,
       "changePct": null,
       "high52": 1.3165,
@@ -90,45 +90,45 @@
       "ath": 1.73
     },
     "C6L.SI": {
-      "price": 6.62,
-      "change": 0.05,
-      "changePct": 0.761,
+      "price": 6.64,
+      "change": 0.07,
+      "changePct": 1.0654,
       "high52": 7.63,
       "low52": 6.23,
-      "volume": 1337600,
+      "volume": 1701700,
       "currency": "SGD",
       "name": "Singapore Airlines Limited",
       "ath": 14.23
     },
     "U11.SI": {
-      "price": 37.52,
-      "change": -0.07,
-      "changePct": -0.1862,
+      "price": 37.55,
+      "change": -0.04,
+      "changePct": -0.1064,
       "high52": 39.5,
       "low52": 33.25,
-      "volume": 348700,
+      "volume": 399000,
       "currency": "SGD",
       "name": "United Overseas Bank Limited",
       "ath": 39.5
     },
     "D05.SI": {
-      "price": 57.44,
-      "change": -0.26,
-      "changePct": -0.4506,
+      "price": 57.39,
+      "change": -0.31,
+      "changePct": -0.5373,
       "high52": 60.0,
       "low52": 39.71,
-      "volume": 1021800,
+      "volume": 1117000,
       "currency": "SGD",
       "name": "DBS Group Holdings Ltd",
       "ath": 60.0
     },
     "O39.SI": {
-      "price": 22.82,
-      "change": -0.06,
-      "changePct": -0.2622,
+      "price": 22.83,
+      "change": -0.05,
+      "changePct": -0.2185,
       "high52": 23.1,
       "low52": 15.6,
-      "volume": 1171100,
+      "volume": 1280300,
       "currency": "SGD",
       "name": "Oversea-Chinese Banking Corporation Limited",
       "ath": 23.0
@@ -138,7 +138,7 @@
       "change": -0.22,
       "changePct": -1.0521,
       "high52": 21.0,
-      "low52": 13.29,
+      "low52": 13.32,
       "volume": 12241052,
       "currency": "USD",
       "name": "Host Hotels & Resorts, Inc.",

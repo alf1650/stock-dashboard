@@ -395,35 +395,40 @@ async function refreshData() {
 
 let isRefreshing = false;
 
-/* ── Load ATH from data.json ──────────────────────────────────── */
-async function loadAthFromDataJson() {
+/* ── Load data from data.json (fast initial render) ───────────── */
+async function loadFromDataJson() {
   try {
     const resp = await fetch('data.json');
     const json = await resp.json();
     const d = json.data || {};
-    // Update INDICES recordHigh from ATH in data.json
+    // Update ATH values
     INDICES.forEach(idx => {
       const q = d[idx.yahoo];
       if (q && q.ath != null) idx.recordHigh = q.ath;
     });
-    // Update VIX recordHigh
     const vq = d[VIX.yahoo];
     if (vq && vq.ath != null) VIX.recordHigh = vq.ath;
-    // Update WATCHLIST rh from ATH in data.json
     WATCHLIST.forEach(w => {
       const q = d[w.yahoo];
       if (q && q.ath != null) w.rh = q.ath;
     });
-    console.log('ATH values loaded from data.json');
+    // Render immediately from cached data
+    dataCache = d;
+    renderAll(d);
+    document.getElementById('lastUpdated').textContent = 'From data.json: ' + (json.updated || '--');
+    return true;
   } catch(e) {
-    console.warn('Could not load ATH from data.json, using defaults:', e.message);
+    console.warn('Could not load data.json:', e.message);
+    return false;
   }
 }
 
 /* ── Init ────────────────────────────────────────────────────── */
 (async function init() {
-  await loadAthFromDataJson();
-  await refreshData();
+  // 1. Render instantly from data.json
+  const loaded = await loadFromDataJson();
+  // 2. Then refresh live data in background (non-blocking)
+  refreshData();
 })();
 </script>
 </body>
