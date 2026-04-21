@@ -3,7 +3,7 @@
 import json
 import urllib.request
 import urllib.parse
-from datetime import datetime
+from datetime import datetime, timezone
 
 YAHOO_BASE = "https://query1.finance.yahoo.com/v8/finance/chart"
 
@@ -70,23 +70,23 @@ def fetch_quote(yahoo_symbol):
 
 
 def fetch_ath(yahoo_symbol):
-    """Fetch the all-time high price and its date using max available history."""
-    url = f"{YAHOO_BASE}/{urllib.parse.quote(yahoo_symbol)}?interval=1mo&range=max"
+    """Fetch the all-time high closing price and its date using max available daily history."""
+    url = f"{YAHOO_BASE}/{urllib.parse.quote(yahoo_symbol)}?interval=1d&range=max"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=15) as resp:
         data = json.loads(resp.read())
     result = data["chart"]["result"][0]
-    highs = result["indicators"]["quote"][0].get("high", [])
+    closes = result["indicators"]["quote"][0].get("close", [])
     timestamps = result.get("timestamp", [])
     best_price = None
     best_ts = None
-    for i, h in enumerate(highs):
-        if h is not None and (best_price is None or h > best_price):
-            best_price = h
+    for i, c in enumerate(closes):
+        if c is not None and (best_price is None or c > best_price):
+            best_price = c
             best_ts = timestamps[i] if i < len(timestamps) else None
     if best_price is None:
         return None, None
-    ath_date = datetime.utcfromtimestamp(best_ts).strftime("%Y-%m-%d") if best_ts else None
+    ath_date = datetime.fromtimestamp(best_ts, tz=timezone.utc).strftime("%Y-%m-%d") if best_ts else None
     return round(best_price, 2), ath_date
 
 
