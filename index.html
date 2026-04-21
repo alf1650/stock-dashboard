@@ -297,8 +297,8 @@ function renderIndexCard(idx, q) {
   const changePct = q?.changePct;
   const rh = idx.recordHigh;
   const pctHi = (rh && price) ? ((price-rh)/rh*100) : null;
-  const high52 = q?.high52;
-  const pct52 = (high52 && price) ? ((price-high52)/high52*100) : null;
+  const low52 = q?.low52;
+  const pctAboveLow52 = (low52 && price) ? ((price-low52)/low52*100) : null;
 
   // Update recordHigh if current price exceeds it
   if (price && rh && price > rh) idx.recordHigh = price;
@@ -328,8 +328,8 @@ function renderIndexCard(idx, q) {
     <div class="price">${price!=null?fmt(price):'--'}</div>
     <div class="chg ${cls(change)}">${change!=null?`${change>=0?'+':''}${fmt(change)} (${fmtPct(changePct)})`:' --'}</div>
     <div class="stats">
-      <div><div class="st-label">52W High</div><div class="st-val">${high52!=null?fmt(high52):'--'}</div></div>
-      <div><div class="st-label">% from 52W High</div><div class="st-val ${cls(pct52)}">${pct52!=null?fmtPct(pct52):'--'}</div></div>
+      <div><div class="st-label">52W Low</div><div class="st-val">${low52!=null?fmt(low52):'--'}</div></div>
+      <div><div class="st-label">% above 52W Low</div><div class="st-val ${cls(pctAboveLow52)}">${pctAboveLow52!=null?fmtPct(pctAboveLow52):'--'}</div></div>
       <div><div class="st-label">ATH${idx.athDate?' ('+idx.athDate+')':''}</div><div class="st-val">${rh?fmt(rh):'--'}</div></div>
       <div><div class="st-label">% From ATH</div><div class="st-val ${cls(pctHi)}">${pctHi!=null?fmtPct(pctHi):'--'}</div></div>
     </div>
