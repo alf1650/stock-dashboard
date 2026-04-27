@@ -1,10 +1,10 @@
 {
-  "updated": "2026-04-24 21:07:40",
+  "updated": "2026-04-27 08:32:33",
   "data": {
     "^VIX": {
-      "price": 18.71,
-      "change": -0.6,
-      "changePct": -3.1072,
+      "price": 19.19,
+      "change": 0.48,
+      "changePct": 2.5655,
       "high52": 35.3,
       "low52": 13.38,
       "volume": 0,
@@ -18,11 +18,11 @@
       "change": -79.6103,
       "changePct": -0.1614,
       "high52": 50512.79,
-      "low52": 39718.68,
+      "low52": 39745.63,
       "volume": 536956902,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
-      "ath": 49310.32,
+      "ath": 49230.71,
       "athDate": "2026-04-01"
     },
     "^NDX": {
@@ -31,11 +31,11 @@
       "changePct": 1.9454,
       "high52": 27314.215,
       "low52": 19011.98,
-      "volume": 1531371000,
+      "volume": 1535329000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 27303.67,
-      "athDate": "2026-04-24"
+      "athDate": "2026-04-01"
     },
     "^GSPC": {
       "price": 7165.08,
@@ -47,11 +47,11 @@
       "currency": "USD",
       "name": "S&P 500",
       "ath": 7165.08,
-      "athDate": "2026-04-24"
+      "athDate": "2026-03-01"
     },
     "^RUT": {
-      "price": 2787.0005,
-      "change": 11.9004,
+      "price": 2787.0,
+      "change": 11.8999,
       "changePct": 0.4288,
       "high52": 2817.96,
       "low52": 1925.35,
@@ -62,33 +62,33 @@
       "athDate": "2026-04-24"
     },
     "VWRA.L": {
-      "price": 179.82,
-      "change": -0.26,
-      "changePct": -0.1444,
+      "price": 180.24,
+      "change": 0.42,
+      "changePct": 0.2336,
       "high52": 202.3,
       "low52": 135.5,
-      "volume": 136863,
+      "volume": 22574,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF",
       "ath": 181.46,
       "athDate": "2026-04-12"
     },
     "XNAS.L": {
-      "price": 63.02,
-      "change": 0.44,
-      "changePct": 0.7031,
-      "high52": 63.04,
+      "price": 63.17,
+      "change": 0.15,
+      "changePct": 0.238,
+      "high52": 63.28,
       "low52": 43.885,
-      "volume": 15194,
+      "volume": 1058,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
-      "ath": 63.02,
-      "athDate": "2026-04-24"
+      "ath": 63.17,
+      "athDate": "2026-04-27"
     },
     "USDSGD=X": {
-      "price": 1.2758,
-      "change": -0.002,
-      "changePct": -0.1565,
+      "price": 1.2734,
+      "change": -0.0044,
+      "changePct": -0.3443,
       "high52": 1.3165,
       "low52": 1.2588,
       "volume": 0,
@@ -98,60 +98,60 @@
       "athDate": "2004-05-31"
     },
     "C6L.SI": {
-      "price": 6.39,
-      "change": 0.0,
-      "changePct": 0.0,
+      "price": 6.36,
+      "change": -0.03,
+      "changePct": -0.4695,
       "high52": 7.63,
       "low52": 6.23,
-      "volume": 4524200,
+      "volume": 4114500,
       "currency": "SGD",
       "name": "Singapore Airlines Limited",
       "ath": 13.81,
       "athDate": "2007-09-30"
     },
     "U11.SI": {
-      "price": 36.0,
-      "change": -0.9,
-      "changePct": -2.439,
+      "price": 35.86,
+      "change": -0.14,
+      "changePct": -0.3889,
       "high52": 39.5,
       "low52": 33.25,
-      "volume": 2784200,
+      "volume": 1175410,
       "currency": "SGD",
       "name": "United Overseas Bank Limited",
       "ath": 38.27,
       "athDate": "2025-12-31"
     },
     "D05.SI": {
-      "price": 56.9,
-      "change": -0.1,
-      "changePct": -0.1754,
+      "price": 56.79,
+      "change": -0.11,
+      "changePct": -0.1933,
       "high52": 60.0,
-      "low52": 41.73,
-      "volume": 5391673,
+      "low52": 41.95,
+      "volume": 1506100,
       "currency": "SGD",
       "name": "DBS Group Holdings Ltd",
       "ath": 59.2,
       "athDate": "2025-12-31"
     },
     "O39.SI": {
-      "price": 21.71,
+      "price": 21.62,
       "change": -0.09,
-      "changePct": -0.4128,
+      "changePct": -0.4146,
       "high52": 23.1,
-      "low52": 15.76,
-      "volume": 5846800,
+      "low52": 15.8,
+      "volume": 2786100,
       "currency": "SGD",
       "name": "Oversea-Chinese Banking Corporation Limited",
       "ath": 21.97,
       "athDate": "2026-02-28"
     },
     "HST": {
-      "price": 20.9,
-      "change": -0.17,
-      "changePct": -0.8068,
+      "price": 20.91,
+      "change": -0.16,
+      "changePct": -0.7594,
       "high52": 21.55,
       "low52": 13.68,
-      "volume": 4504466,
+      "volume": 4510541,
       "currency": "USD",
       "name": "Host Hotels & Resorts, Inc.",
       "ath": 35.87,
@@ -194,12 +194,12 @@
       "athDate": "2000-08-01"
     },
     "MSFT": {
-      "price": 424.62,
-      "change": 8.87,
-      "changePct": 2.1335,
+      "price": 424.6,
+      "change": 8.85,
+      "changePct": 2.1287,
       "high52": 555.45,
       "low52": 356.28,
-      "volume": 27161742,
+      "volume": 27457404,
       "currency": "USD",
       "name": "Microsoft Corporation",
       "ath": 506.69,
@@ -209,13 +209,13 @@
       "price": 263.99,
       "change": 8.91,
       "changePct": 3.493,
-      "high52": 264.375,
+      "high52": 264.5,
       "low52": 178.85,
-      "volume": 53601873,
+      "volume": 53777353,
       "currency": "USD",
       "name": "Amazon.com, Inc.",
       "ath": 263.99,
-      "athDate": "2026-04-24"
+      "athDate": "2026-04-01"
     },
     "NOW": {
       "price": 90.17,
@@ -230,12 +230,12 @@
       "athDate": "2024-12-01"
     },
     "NFLX": {
-      "price": 92.44,
-      "change": -0.38,
-      "changePct": -0.4094,
+      "price": 92.355,
+      "change": -0.465,
+      "changePct": -0.501,
       "high52": 134.115,
       "low52": 75.01,
-      "volume": 30859491,
+      "volume": 32553177,
       "currency": "USD",
       "name": "Netflix, Inc.",
       "ath": 133.91,
@@ -258,7 +258,7 @@
       "change": -0.03,
       "changePct": -0.8043,
       "high52": 9.39,
-      "low52": 2.91,
+      "low52": 2.96,
       "volume": 21409105,
       "currency": "USD",
       "name": "BigBear.ai Holdings, Inc.",
@@ -266,15 +266,15 @@
       "athDate": "2022-04-11"
     },
     "INTC": {
-      "price": 82.54,
-      "change": 15.76,
-      "changePct": 23.5999,
+      "price": 82.57,
+      "change": 15.79,
+      "changePct": 23.6448,
       "high52": 85.22,
       "low52": 18.97,
-      "volume": 279142137,
+      "volume": 281405214,
       "currency": "USD",
       "name": "Intel Corporation",
-      "ath": 82.54,
+      "ath": 82.57,
       "athDate": "2026-04-24"
     },
     "NKE": {
@@ -319,7 +319,7 @@
       "changePct": 1.0737,
       "high52": 207.52,
       "low52": 105.32,
-      "volume": 36728478,
+      "volume": 38677156,
       "currency": "USD",
       "name": "Palantir Technologies Inc.",
       "ath": 200.47,
@@ -335,7 +335,7 @@
       "currency": "USD",
       "name": "State Street SPDR S&P 500 ETF Trust",
       "ath": 713.94,
-      "athDate": "2026-04-24"
+      "athDate": "2026-04-01"
     }
   }
 }
