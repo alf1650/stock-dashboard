@@ -56,6 +56,25 @@ header h1{font-size:18px;color:#2d3436;letter-spacing:.5px}
 .wl-tbl td:not(:first-child){text-align:right;font-family:'SF Mono',Monaco,Menlo,monospace}
 .wl-tbl tr:hover{background:#f0f3f8}
 .ticker-cell{font-weight:600;color:#0984e3}
+
+/* Movers section */
+.mv-wrap{margin-top:8px}
+.mv-controls{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:10px}
+.mv-search{flex:1;min-width:160px;padding:7px 10px;border:1px solid #dfe6e9;border-radius:6px;font-size:12px;background:#fff;outline:none}
+.mv-search:focus{border-color:#0984e3}
+.mv-filter{display:inline-flex;border:1px solid #dfe6e9;border-radius:6px;overflow:hidden;background:#fff}
+.mv-filter button{padding:6px 10px;border:0;background:transparent;color:#636e72;font-size:11px;font-weight:600;cursor:pointer}
+.mv-filter button.active{background:#0984e3;color:#fff}
+.mv-tbl th{cursor:pointer;user-select:none}
+.mv-tbl th.sorted{color:#0984e3}
+.mv-tbl th .arr{font-size:9px;margin-left:3px}
+.mv-tbl td.big-up{background:rgba(0,184,148,.18);font-weight:700}
+.mv-tbl td.big-dn{background:rgba(214,48,49,.15);font-weight:700}
+.mv-tbl td.med-up{background:rgba(0,184,148,.06)}
+.mv-tbl td.med-dn{background:rgba(214,48,49,.05)}
+.mv-tbl tr.above-sma td.ticker-cell{border-left:3px solid #00b894}
+.mv-tbl tr.below-sma td.ticker-cell{border-left:3px solid #d63031}
+.mv-legend{font-size:10px;color:#b2bec3;margin-top:6px}
 .res{margin-top:28px;padding:16px;background:#fff;border-radius:8px;border:1px solid #dfe6e9;box-shadow:0 1px 3px rgba(0,0,0,.04)}
 .res h3{font-size:13px;color:#636e72;margin-bottom:10px}
 .res-list{list-style:none;display:flex;flex-wrap:wrap;gap:14px}
@@ -99,7 +118,36 @@ header h1{font-size:18px;color:#2d3436;letter-spacing:.5px}
 <div id="errorBar"></div>
 
 <div class="main">
-  <div class="grid" id="indicesGrid"></div>
+  <div class="mv-wrap">
+    <div class="section-title">🚀 Top Tech Growth Movers</div>
+    <div class="mv-controls">
+      <input id="mvSearch" class="mv-search" type="text" placeholder="Filter by ticker or name…" />
+      <div class="mv-filter" id="mvFilter">
+        <button data-f="all" class="active">All</button>
+        <button data-f="above">Above SMA200</button>
+        <button data-f="below">Below SMA200</button>
+        <button data-f="big">≥5% Move</button>
+      </div>
+    </div>
+    <div style="overflow-x:auto">
+      <table class="wl-tbl mv-tbl" id="mvTbl">
+        <thead>
+          <tr>
+            <th data-k="sym">Ticker</th>
+            <th data-k="price">Price</th>
+            <th data-k="dailyPct">Daily %</th>
+            <th data-k="week1Pct">1W %</th>
+            <th data-k="week2Pct">2W %</th>
+            <th data-k="week4Pct">4W %</th>
+            <th data-k="sma200">SMA200</th>
+            <th data-k="vsSma200Pct">vs SMA200</th>
+          </tr>
+        </thead>
+        <tbody id="mvBody"></tbody>
+      </table>
+    </div>
+    <div class="mv-legend">Green border = price above SMA200 (bullish trend) · Red border = below SMA200 · Highlighted cells: ≥5% move</div>
+  </div>
 
   <div class="wl-wrap">
     <div class="section-title">Stock Watchlist</div>
@@ -119,6 +167,11 @@ header h1{font-size:18px;color:#2d3436;letter-spacing:.5px}
       <tbody id="wlBody"></tbody>
     </table>
   </div>
+
+  <div style="margin-top:28px">
+    <div class="section-title">Major Indices</div>
+  </div>
+  <div class="grid" id="indicesGrid"></div>
 
   <div class="res">
     <h3>📚 Resources &amp; References</h3>
@@ -161,18 +214,18 @@ const WATCHLIST = [
   { sym:'BBY',  yahoo:'BBY',    name:'Best Buy',           rh:141.97 },
   { sym:'NET',  yahoo:'NET',    name:'Cloudflare',         rh:260    },
   { sym:'T',    yahoo:'T',      name:'AT&T',               rh:29.79  },
-  { sym:'MSFT', yahoo:'MSFT',   name:'Microsoft',          rh:555.45 },
-  { sym:'AMZN', yahoo:'AMZN',   name:'Amazon',             rh:258.6  },
-  { sym:'NOW',  yahoo:'NOW',    name:'ServiceNow',         rh:239.62 },
-  { sym:'NFLX', yahoo:'NFLX',   name:'Netflix',            rh:134.12 },
   { sym:'UNH',  yahoo:'UNH',    name:'UnitedHealth',       rh:630.73 },
   { sym:'BBAI', yahoo:'BBAI',   name:'BigBear.ai',         rh:16.12  },
-  { sym:'INTC', yahoo:'INTC',   name:'Intel',              rh:68.49  },
   { sym:'NKE',  yahoo:'NKE',    name:'Nike',               rh:179.1  },
   { sym:'HPQ',  yahoo:'HPQ',    name:'HP Inc',             rh:41.47  },
   { sym:'PFE',  yahoo:'PFE',    name:'Pfizer',             rh:61.71  },
-  { sym:'PLTR', yahoo:'PLTR',   name:'Palantir',           rh:207.52 },
   { sym:'SPY',  yahoo:'SPY',    name:'SPDR S&P 500 ETF',   rh:697.84 },
+];
+
+const MOVERS = [
+  'NVDA','AMD','TSLA','PLTR','META','MSFT','GOOGL','AMZN',
+  'AVGO','CRWD','SMCI','MU','ARM','MRVL','NFLX','ORCL',
+  'NOW','SNOW','COIN','SHOP','INTC','LAC',
 ];
 
 const USDSGD = { yahoo:'USDSGD=X' };
@@ -381,6 +434,113 @@ function renderAll(data) {
   renderUsdSgd(data[USDSGD.yahoo]);
   renderIndices(data);
   renderWatchlist(data);
+  renderMovers();
+}
+
+/* ── Movers (top tech growth) ────────────────────────────────── */
+let moversData = {};      // { SYM: {price, dailyPct, week1Pct, week2Pct, week4Pct, sma200, vsSma200Pct, name} }
+let mvSort = { key: 'week4Pct', dir: -1 }; // default: best 4W performance first
+let mvFilter = 'all';
+let mvSearch = '';
+
+function moveCellCls(pct) {
+  if (pct == null || isNaN(pct)) return '';
+  const a = Math.abs(pct);
+  if (a >= 5) return pct >= 0 ? 'big-up' : 'big-dn';
+  if (a >= 2) return pct >= 0 ? 'med-up' : 'med-dn';
+  return '';
+}
+
+function renderMovers() {
+  const tbody = document.getElementById('mvBody');
+  if (!tbody) return;
+
+  let rows = MOVERS.map(sym => {
+    const m = moversData[sym] || {};
+    return {
+      sym,
+      name: m.name || sym,
+      price: m.price ?? null,
+      dailyPct: m.dailyPct ?? null,
+      week1Pct: m.week1Pct ?? null,
+      week2Pct: m.week2Pct ?? null,
+      week4Pct: m.week4Pct ?? null,
+      sma200: m.sma200 ?? null,
+      vsSma200Pct: m.vsSma200Pct ?? null,
+    };
+  });
+
+  // Filter
+  const q = mvSearch.trim().toLowerCase();
+  if (q) {
+    rows = rows.filter(r => r.sym.toLowerCase().includes(q) || (r.name||'').toLowerCase().includes(q));
+  }
+  if (mvFilter === 'above') rows = rows.filter(r => r.vsSma200Pct != null && r.vsSma200Pct >= 0);
+  else if (mvFilter === 'below') rows = rows.filter(r => r.vsSma200Pct != null && r.vsSma200Pct < 0);
+  else if (mvFilter === 'big')   rows = rows.filter(r =>
+    [r.dailyPct, r.week1Pct, r.week2Pct, r.week4Pct].some(v => v != null && Math.abs(v) >= 5)
+  );
+
+  // Sort
+  const k = mvSort.key, dir = mvSort.dir;
+  rows.sort((a,b) => {
+    const va = a[k], vb = b[k];
+    if (va == null && vb == null) return 0;
+    if (va == null) return 1;
+    if (vb == null) return -1;
+    if (typeof va === 'string') return dir * va.localeCompare(vb);
+    return dir * (va - vb);
+  });
+
+  tbody.innerHTML = rows.map(r => {
+    const trCls = r.vsSma200Pct == null ? '' : (r.vsSma200Pct >= 0 ? 'above-sma' : 'below-sma');
+    return `<tr class="${trCls}">
+      <td class="ticker-cell" title="${r.name}">${r.sym}</td>
+      <td>${r.price!=null?fmt(r.price):'--'}</td>
+      <td class="${cls(r.dailyPct)} ${moveCellCls(r.dailyPct)}">${r.dailyPct!=null?fmtPct(r.dailyPct):'--'}</td>
+      <td class="${cls(r.week1Pct)} ${moveCellCls(r.week1Pct)}">${r.week1Pct!=null?fmtPct(r.week1Pct):'--'}</td>
+      <td class="${cls(r.week2Pct)} ${moveCellCls(r.week2Pct)}">${r.week2Pct!=null?fmtPct(r.week2Pct):'--'}</td>
+      <td class="${cls(r.week4Pct)} ${moveCellCls(r.week4Pct)}">${r.week4Pct!=null?fmtPct(r.week4Pct):'--'}</td>
+      <td>${r.sma200!=null?fmt(r.sma200):'--'}</td>
+      <td class="${cls(r.vsSma200Pct)}">${r.vsSma200Pct!=null?fmtPct(r.vsSma200Pct):'--'}</td>
+    </tr>`;
+  }).join('');
+
+  // Update sort arrows
+  document.querySelectorAll('#mvTbl thead th').forEach(th => {
+    th.classList.remove('sorted');
+    const arr = th.querySelector('.arr'); if (arr) arr.remove();
+  });
+  const activeTh = document.querySelector(`#mvTbl thead th[data-k="${mvSort.key}"]`);
+  if (activeTh) {
+    activeTh.classList.add('sorted');
+    const span = document.createElement('span');
+    span.className = 'arr'; span.textContent = mvSort.dir === 1 ? '▲' : '▼';
+    activeTh.appendChild(span);
+  }
+}
+
+function setupMoversUI() {
+  document.querySelectorAll('#mvTbl thead th').forEach(th => {
+    th.addEventListener('click', () => {
+      const k = th.dataset.k;
+      if (mvSort.key === k) mvSort.dir = -mvSort.dir;
+      else { mvSort.key = k; mvSort.dir = (k === 'sym') ? 1 : -1; }
+      renderMovers();
+    });
+  });
+  document.getElementById('mvSearch').addEventListener('input', e => {
+    mvSearch = e.target.value;
+    renderMovers();
+  });
+  document.querySelectorAll('#mvFilter button').forEach(b => {
+    b.addEventListener('click', () => {
+      document.querySelectorAll('#mvFilter button').forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      mvFilter = b.dataset.f;
+      renderMovers();
+    });
+  });
 }
 
 /* ── Refresh logic ───────────────────────────────────────────── */
@@ -427,6 +587,8 @@ async function loadFromDataJson() {
       if (q && q.ath != null) w.rh = q.ath;
       if (q && q.athDate) w.athDate = q.athDate;
     });
+    // Movers
+    if (json.movers) moversData = json.movers;
     // Render immediately from cached data
     dataCache = d;
     renderAll(d);
@@ -440,6 +602,7 @@ async function loadFromDataJson() {
 
 /* ── Init ────────────────────────────────────────────────────── */
 (async function init() {
+  setupMoversUI();
   // 1. Render instantly from data.json
   const loaded = await loadFromDataJson();
   // 2. Then refresh live data in background (non-blocking)
