@@ -17,27 +17,6 @@ SYMBOLS = {
     "VWRA.L":  "VWRA",
     "XNAS.L":  "XNAS",
     "USDSGD=X":"USDSGD",
-    # Watchlist
-    "C6L.SI":  "SIA",
-    "U11.SI":  "UOB",
-    "D05.SI":  "DBS",
-    "O39.SI":  "OCBC",
-    "HST":     "HST",
-    "BBY":     "BBY",
-    "NET":     "NET",
-    "T":       "T",
-    "MSFT":    "MSFT",
-    "AMZN":    "AMZN",
-    "NOW":     "NOW",
-    "NFLX":    "NFLX",
-    "UNH":     "UNH",
-    "BBAI":    "BBAI",
-    "INTC":    "INTC",
-    "NKE":     "NKE",
-    "HPQ":     "HPQ",
-    "PFE":     "PFE",
-    "PLTR":    "PLTR",
-    "SPY":     "SPY",
 }
 
 

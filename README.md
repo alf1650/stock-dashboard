@@ -1,6 +1,6 @@
 # Stock Market Dashboard
 
-A dark-themed stock market dashboard showing major indices, correction levels, and a stock watchlist.
+A dark-themed stock market dashboard showing major indices and correction levels.
 
 ## Features
 
@@ -8,7 +8,6 @@ A dark-themed stock market dashboard showing major indices, correction levels, a
 - **Correction Levels**: -5% to -30% from 10-year highs with color-coded status
 - **VIX Display**: Color-coded volatility index (green < 15, yellow < 25, orange < 35, red ≥ 35)
 - **USD/SGD Exchange Rate**
-- **Stock Watchlist**: 20 stocks (US + Singapore) with daily change, 52-week high, and % from all-time high
 - **Live Refresh**: Attempts to fetch live data via CORS proxy; falls back to `data.json`
 - **Mobile Responsive**: Works on phone and tablet
 
