@@ -149,6 +149,11 @@ header h1{font-size:18px;color:#2d3436;letter-spacing:.5px}
     <div class="mv-legend">Green border = price above SMA200 (bullish trend) · Red border = below SMA200 · Highlighted cells: ≥5% move</div>
   </div>
 
+  <div style="margin-top:28px">
+    <div class="section-title">Major Indices</div>
+  </div>
+  <div class="grid" id="indicesGrid"></div>
+
   <div class="res">
     <h3>📚 Resources &amp; References</h3>
     <ul class="res-list">
@@ -180,6 +185,12 @@ const INDICES = [
 ];
 
 const VIX = { code:'VIX', yahoo:'^VIX', recordHigh:65.73 };
+
+const MOVERS = [
+  'NVDA','AMD','TSLA','PLTR','META','MSFT','GOOGL','AMZN',
+  'AVGO','CRWD','SMCI','MU','ARM','MRVL','NFLX','ORCL',
+  'NOW','SNOW','COIN','SHOP','INTC','LAC',
+];
 
 const USDSGD = { yahoo:'USDSGD=X' };
 
@@ -360,6 +371,110 @@ function renderAll(data) {
   renderVix(data[VIX.yahoo]);
   renderUsdSgd(data[USDSGD.yahoo]);
   renderIndices(data);
+  renderMovers();
+}
+
+/* ── Movers (top tech growth) ────────────────────────────────── */
+let moversData = {};
+let mvSort = { key: 'week4Pct', dir: -1 };
+let mvFilter = 'all';
+let mvSearch = '';
+
+function moveCellCls(pct) {
+  if (pct == null || isNaN(pct)) return '';
+  const a = Math.abs(pct);
+  if (a >= 5) return pct >= 0 ? 'big-up' : 'big-dn';
+  if (a >= 2) return pct >= 0 ? 'med-up' : 'med-dn';
+  return '';
+}
+
+function renderMovers() {
+  const tbody = document.getElementById('mvBody');
+  if (!tbody) return;
+
+  let rows = MOVERS.map(sym => {
+    const m = moversData[sym] || {};
+    return {
+      sym,
+      name: m.name || sym,
+      price: m.price ?? null,
+      dailyPct: m.dailyPct ?? null,
+      week1Pct: m.week1Pct ?? null,
+      week2Pct: m.week2Pct ?? null,
+      week4Pct: m.week4Pct ?? null,
+      sma200: m.sma200 ?? null,
+      vsSma200Pct: m.vsSma200Pct ?? null,
+    };
+  });
+
+  const q = mvSearch.trim().toLowerCase();
+  if (q) {
+    rows = rows.filter(r => r.sym.toLowerCase().includes(q) || (r.name||'').toLowerCase().includes(q));
+  }
+  if (mvFilter === 'above') rows = rows.filter(r => r.vsSma200Pct != null && r.vsSma200Pct >= 0);
+  else if (mvFilter === 'below') rows = rows.filter(r => r.vsSma200Pct != null && r.vsSma200Pct < 0);
+  else if (mvFilter === 'big')   rows = rows.filter(r =>
+    [r.dailyPct, r.week1Pct, r.week2Pct, r.week4Pct].some(v => v != null && Math.abs(v) >= 5)
+  );
+
+  const k = mvSort.key, dir = mvSort.dir;
+  rows.sort((a,b) => {
+    const va = a[k], vb = b[k];
+    if (va == null && vb == null) return 0;
+    if (va == null) return 1;
+    if (vb == null) return -1;
+    if (typeof va === 'string') return dir * va.localeCompare(vb);
+    return dir * (va - vb);
+  });
+
+  tbody.innerHTML = rows.map(r => {
+    const trCls = r.vsSma200Pct == null ? '' : (r.vsSma200Pct >= 0 ? 'above-sma' : 'below-sma');
+    return `<tr class="${trCls}">
+      <td class="ticker-cell" title="${r.name}">${r.sym}</td>
+      <td>${r.price!=null?fmt(r.price):'--'}</td>
+      <td class="${cls(r.dailyPct)} ${moveCellCls(r.dailyPct)}">${r.dailyPct!=null?fmtPct(r.dailyPct):'--'}</td>
+      <td class="${cls(r.week1Pct)} ${moveCellCls(r.week1Pct)}">${r.week1Pct!=null?fmtPct(r.week1Pct):'--'}</td>
+      <td class="${cls(r.week2Pct)} ${moveCellCls(r.week2Pct)}">${r.week2Pct!=null?fmtPct(r.week2Pct):'--'}</td>
+      <td class="${cls(r.week4Pct)} ${moveCellCls(r.week4Pct)}">${r.week4Pct!=null?fmtPct(r.week4Pct):'--'}</td>
+      <td>${r.sma200!=null?fmt(r.sma200):'--'}</td>
+      <td class="${cls(r.vsSma200Pct)}">${r.vsSma200Pct!=null?fmtPct(r.vsSma200Pct):'--'}</td>
+    </tr>`;
+  }).join('');
+
+  document.querySelectorAll('#mvTbl thead th').forEach(th => {
+    th.classList.remove('sorted');
+    const arr = th.querySelector('.arr'); if (arr) arr.remove();
+  });
+  const activeTh = document.querySelector(`#mvTbl thead th[data-k="${mvSort.key}"]`);
+  if (activeTh) {
+    activeTh.classList.add('sorted');
+    const span = document.createElement('span');
+    span.className = 'arr'; span.textContent = mvSort.dir === 1 ? '▲' : '▼';
+    activeTh.appendChild(span);
+  }
+}
+
+function setupMoversUI() {
+  document.querySelectorAll('#mvTbl thead th').forEach(th => {
+    th.addEventListener('click', () => {
+      const k = th.dataset.k;
+      if (mvSort.key === k) mvSort.dir = -mvSort.dir;
+      else { mvSort.key = k; mvSort.dir = (k === 'sym') ? 1 : -1; }
+      renderMovers();
+    });
+  });
+  document.getElementById('mvSearch').addEventListener('input', e => {
+    mvSearch = e.target.value;
+    renderMovers();
+  });
+  document.querySelectorAll('#mvFilter button').forEach(b => {
+    b.addEventListener('click', () => {
+      document.querySelectorAll('#mvFilter button').forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      mvFilter = b.dataset.f;
+      renderMovers();
+    });
+  });
 }
 
 /* ── Refresh logic ───────────────────────────────────────────── */
@@ -401,6 +516,7 @@ async function loadFromDataJson() {
     });
     const vq = d[VIX.yahoo];
     if (vq && vq.ath != null) VIX.recordHigh = vq.ath;
+    if (json.movers) moversData = json.movers;
     // Render immediately from cached data
     dataCache = d;
     renderAll(d);
