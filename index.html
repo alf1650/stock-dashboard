@@ -56,6 +56,25 @@ header h1{font-size:18px;color:#2d3436;letter-spacing:.5px}
 .wl-tbl td:not(:first-child){text-align:right;font-family:'SF Mono',Monaco,Menlo,monospace}
 .wl-tbl tr:hover{background:#f0f3f8}
 .ticker-cell{font-weight:600;color:#0984e3}
+
+/* Movers section */
+.mv-wrap{margin-top:8px}
+.mv-controls{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:10px}
+.mv-search{flex:1;min-width:160px;padding:7px 10px;border:1px solid #dfe6e9;border-radius:6px;font-size:12px;background:#fff;outline:none}
+.mv-search:focus{border-color:#0984e3}
+.mv-filter{display:inline-flex;border:1px solid #dfe6e9;border-radius:6px;overflow:hidden;background:#fff}
+.mv-filter button{padding:6px 10px;border:0;background:transparent;color:#636e72;font-size:11px;font-weight:600;cursor:pointer}
+.mv-filter button.active{background:#0984e3;color:#fff}
+.mv-tbl th{cursor:pointer;user-select:none}
+.mv-tbl th.sorted{color:#0984e3}
+.mv-tbl th .arr{font-size:9px;margin-left:3px}
+.mv-tbl td.big-up{background:rgba(0,184,148,.18);font-weight:700}
+.mv-tbl td.big-dn{background:rgba(214,48,49,.15);font-weight:700}
+.mv-tbl td.med-up{background:rgba(0,184,148,.06)}
+.mv-tbl td.med-dn{background:rgba(214,48,49,.05)}
+.mv-tbl tr.above-sma td.ticker-cell{border-left:3px solid #00b894}
+.mv-tbl tr.below-sma td.ticker-cell{border-left:3px solid #d63031}
+.mv-legend{font-size:10px;color:#b2bec3;margin-top:6px}
 .res{margin-top:28px;padding:16px;background:#fff;border-radius:8px;border:1px solid #dfe6e9;box-shadow:0 1px 3px rgba(0,0,0,.04)}
 .res h3{font-size:13px;color:#636e72;margin-bottom:10px}
 .res-list{list-style:none;display:flex;flex-wrap:wrap;gap:14px}
@@ -99,7 +118,36 @@ header h1{font-size:18px;color:#2d3436;letter-spacing:.5px}
 <div id="errorBar"></div>
 
 <div class="main">
-  <div class="grid" id="indicesGrid"></div>
+  <div class="mv-wrap">
+    <div class="section-title">🚀 Top Tech Growth Movers</div>
+    <div class="mv-controls">
+      <input id="mvSearch" class="mv-search" type="text" placeholder="Filter by ticker or name…" />
+      <div class="mv-filter" id="mvFilter">
+        <button data-f="all" class="active">All</button>
+        <button data-f="above">Above SMA200</button>
+        <button data-f="below">Below SMA200</button>
+        <button data-f="big">≥5% Move</button>
+      </div>
+    </div>
+    <div style="overflow-x:auto">
+      <table class="wl-tbl mv-tbl" id="mvTbl">
+        <thead>
+          <tr>
+            <th data-k="sym">Ticker</th>
+            <th data-k="price">Price</th>
+            <th data-k="dailyPct">Daily %</th>
+            <th data-k="week1Pct">1W %</th>
+            <th data-k="week2Pct">2W %</th>
+            <th data-k="week4Pct">4W %</th>
+            <th data-k="sma200">SMA200</th>
+            <th data-k="vsSma200Pct">vs SMA200</th>
+          </tr>
+        </thead>
+        <tbody id="mvBody"></tbody>
+      </table>
+    </div>
+    <div class="mv-legend">Green border = price above SMA200 (bullish trend) · Red border = below SMA200 · Highlighted cells: ≥5% move</div>
+  </div>
 
   <div class="res">
     <h3>📚 Resources &amp; References</h3>
@@ -366,6 +414,7 @@ async function loadFromDataJson() {
 
 /* ── Init ────────────────────────────────────────────────────── */
 (async function init() {
+  setupMoversUI();
   // 1. Render instantly from data.json
   const loaded = await loadFromDataJson();
   // 2. Then refresh live data in background (non-blocking)
