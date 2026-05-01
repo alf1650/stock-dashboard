@@ -1,10 +1,10 @@
 {
-  "updated": "2026-04-30 21:06:44",
+  "updated": "2026-05-01 08:18:00",
   "data": {
     "^VIX": {
-      "price": 16.89,
-      "change": -1.92,
-      "changePct": -10.2073,
+      "price": 17.09,
+      "change": 0.2,
+      "changePct": 1.1841,
       "high52": 35.3,
       "low52": 13.38,
       "volume": 0,
@@ -18,12 +18,12 @@
       "change": 790.3314,
       "changePct": 1.6175,
       "high52": 50512.79,
-      "low52": 40705.63,
+      "low52": 40759.41,
       "volume": 733121881,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
       "ath": 49652.14,
-      "athDate": "2026-04-30"
+      "athDate": "2026-04-01"
     },
     "^NDX": {
       "price": 27452.12,
@@ -31,11 +31,11 @@
       "changePct": 0.9752,
       "high52": 27488.031,
       "low52": 19605.07,
-      "volume": 1637089000,
+      "volume": 1642882000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 27452.12,
-      "athDate": "2026-04-30"
+      "athDate": "2026-04-01"
     },
     "^GSPC": {
       "price": 7209.01,
@@ -47,49 +47,49 @@
       "currency": "USD",
       "name": "S&P 500",
       "ath": 7209.01,
-      "athDate": "2026-04-30"
+      "athDate": "2026-03-01"
     },
     "^RUT": {
       "price": 2799.905,
       "change": 60.435,
       "changePct": 2.2061,
       "high52": 2817.96,
-      "low52": 1960.49,
+      "low52": 1976.86,
       "volume": 0,
       "currency": "USD",
       "name": " Russell 2000 Index",
       "ath": 2799.91,
-      "athDate": "2026-04-30"
+      "athDate": "2026-03-01"
     },
     "VWRA.L": {
-      "price": 180.62,
-      "change": 1.58,
-      "changePct": 0.8825,
+      "price": 181.62,
+      "change": 1.0,
+      "changePct": 0.5537,
       "high52": 202.3,
-      "low52": 138.8,
-      "volume": 84546,
+      "low52": 139.36,
+      "volume": 15342,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF",
-      "ath": 181.46,
-      "athDate": "2026-04-12"
+      "ath": 181.62,
+      "athDate": "2026-05-01"
     },
     "XNAS.L": {
-      "price": 63.22,
-      "change": 0.315,
-      "changePct": 0.5008,
-      "high52": 63.56,
+      "price": 63.64,
+      "change": 0.42,
+      "changePct": 0.6643,
+      "high52": 63.74,
       "low52": 45.4,
-      "volume": 30978,
+      "volume": 9109,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
-      "ath": 63.22,
-      "athDate": "2026-04-30"
+      "ath": 63.64,
+      "athDate": "2026-05-01"
     },
     "USDSGD=X": {
-      "price": 1.2723,
-      "change": -0.008,
-      "changePct": -0.6241,
-      "high52": 1.3128,
+      "price": 1.2731,
+      "change": null,
+      "changePct": null,
+      "high52": 1.3121,
       "low52": 1.2588,
       "volume": 0,
       "currency": "SGD",
@@ -99,8 +99,8 @@
     },
     "C6L.SI": {
       "price": 6.29,
-      "change": -0.02,
-      "changePct": -0.317,
+      "change": 0.0,
+      "changePct": 0.0,
       "high52": 7.63,
       "low52": 6.23,
       "volume": 8606200,
@@ -111,8 +111,8 @@
     },
     "U11.SI": {
       "price": 36.15,
-      "change": 0.37,
-      "changePct": 1.0341,
+      "change": -0.0,
+      "changePct": -0.0,
       "high52": 39.5,
       "low52": 33.25,
       "volume": 2999200,
@@ -123,8 +123,8 @@
     },
     "D05.SI": {
       "price": 58.5,
-      "change": 1.94,
-      "changePct": 3.43,
+      "change": 0.0,
+      "changePct": 0.0,
       "high52": 60.0,
       "low52": 42.5,
       "volume": 15409700,
@@ -135,8 +135,8 @@
     },
     "O39.SI": {
       "price": 21.9,
-      "change": 0.24,
-      "changePct": 1.108,
+      "change": 0.0,
+      "changePct": 0.0,
       "high52": 23.1,
       "low52": 15.8,
       "volume": 7767500,
@@ -209,13 +209,13 @@
       "price": 265.06,
       "change": 2.02,
       "changePct": 0.7679,
-      "high52": 273.87,
+      "high52": 273.88,
       "low52": 183.85,
       "volume": 96524742,
       "currency": "USD",
       "name": "Amazon.com, Inc.",
       "ath": 265.06,
-      "athDate": "2026-04-30"
+      "athDate": "2026-04-01"
     },
     "NOW": {
       "price": 88.31,
@@ -245,7 +245,7 @@
       "price": 370.48,
       "change": -0.26,
       "changePct": -0.0701,
-      "high52": 411.99,
+      "high52": 409.7,
       "low52": 234.6,
       "volume": 6838807,
       "currency": "USD",
@@ -269,12 +269,12 @@
       "price": 94.48,
       "change": -0.27,
       "changePct": -0.285,
-      "high52": 95.654,
+      "high52": 95.69,
       "low52": 18.97,
       "volume": 156878310,
       "currency": "USD",
       "name": "Intel Corporation",
-      "ath": 94.75,
+      "ath": 94.48,
       "athDate": "2026-03-01"
     },
     "NKE": {
@@ -335,7 +335,7 @@
       "currency": "USD",
       "name": "State Street SPDR S&P 500 ETF Trust",
       "ath": 718.66,
-      "athDate": "2026-04-30"
+      "athDate": "2026-04-01"
     }
   }
 }
