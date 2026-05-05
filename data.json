@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-04 21:39:20",
+  "updated": "2026-05-05 08:16:43",
   "data": {
     "^VIX": {
-      "price": 18.29,
-      "change": 1.3,
-      "changePct": 7.6516,
+      "price": 17.99,
+      "change": -0.3,
+      "changePct": -1.6402,
       "high52": 35.3,
       "low52": 13.38,
       "volume": 0,
@@ -34,7 +34,7 @@
       "volume": 1123065000,
       "currency": "USD",
       "name": "NASDAQ-100",
-      "ath": 27710.36,
+      "ath": 27651.82,
       "athDate": "2026-04-01"
     },
     "^GSPC": {
@@ -46,49 +46,49 @@
       "volume": 2940319000,
       "currency": "USD",
       "name": "S&P 500",
-      "ath": 7230.12,
+      "ath": 7200.75,
       "athDate": "2026-03-01"
     },
     "^RUT": {
-      "price": 2795.9966,
-      "change": -16.8235,
+      "price": 2795.997,
+      "change": -16.8231,
       "changePct": -0.5981,
-      "high52": 2826.4138,
+      "high52": 2826.414,
       "low52": 1976.86,
       "volume": 0,
       "currency": "USD",
       "name": " Russell 2000 Index",
-      "ath": 2812.82,
+      "ath": 2796.0,
       "athDate": "2026-03-01"
     },
     "VWRA.L": {
-      "price": 181.965,
-      "change": -0.495,
-      "changePct": -0.2713,
+      "price": 181.58,
+      "change": -0.88,
+      "changePct": -0.4823,
       "high52": 202.3,
       "low52": 139.36,
-      "volume": 2764,
+      "volume": 82444,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF",
       "ath": 182.46,
       "athDate": "2026-04-26"
     },
     "XNAS.L": {
-      "price": 64.29,
-      "change": 1.07,
-      "changePct": 1.6925,
-      "high52": 64.36,
+      "price": 64.35,
+      "change": 0.06,
+      "changePct": 0.0933,
+      "high52": 64.47,
       "low52": 45.4,
-      "volume": 16107,
+      "volume": 16696,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
-      "ath": 64.29,
-      "athDate": "2026-04-26"
+      "ath": 64.35,
+      "athDate": "2026-05-05"
     },
     "USDSGD=X": {
-      "price": 1.2762,
-      "change": 0.0034,
-      "changePct": 0.2695,
+      "price": 1.2765,
+      "change": null,
+      "changePct": null,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -252,7 +252,7 @@
       "week4Pct": 52.6,
       "sma200": 279.33,
       "vsSma200Pct": 106.37,
-      "high52": 592.77,
+      "high52": 592.8,
       "low52": 78.54
     },
     "ARM": {
