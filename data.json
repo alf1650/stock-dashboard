@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-08 21:43:15",
+  "updated": "2026-05-11 09:48:01",
   "data": {
     "^VIX": {
-      "price": 17.19,
-      "change": 0.11,
-      "changePct": 0.644,
+      "price": 18.11,
+      "change": 0.92,
+      "changePct": 5.3519,
       "high52": 35.3,
       "low52": 13.38,
       "volume": 0,
@@ -18,7 +18,7 @@
       "change": 12.1913,
       "changePct": 0.0246,
       "high52": 50512.79,
-      "low52": 41150.73,
+      "low52": 41354.09,
       "volume": 456512707,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
@@ -30,7 +30,7 @@
       "change": 671.0448,
       "changePct": 2.3493,
       "high52": 29234.994,
-      "low52": 19984.53,
+      "low52": 20613.27,
       "volume": 1400380000,
       "currency": "USD",
       "name": "NASDAQ-100",
@@ -42,16 +42,16 @@
       "change": 61.8201,
       "changePct": 0.8426,
       "high52": 7401.5,
-      "low52": 5644.15,
+      "low52": 5767.41,
       "volume": 3311720000,
       "currency": "USD",
       "name": "S&P 500",
       "ath": 7398.93,
-      "athDate": "2026-05-08"
+      "athDate": "2026-03-01"
     },
     "^RUT": {
-      "price": 2861.2092,
-      "change": 21.5793,
+      "price": 2861.209,
+      "change": 21.5791,
       "changePct": 0.7599,
       "high52": 2888.62,
       "low52": 2011.2,
@@ -59,36 +59,36 @@
       "currency": "USD",
       "name": " Russell 2000 Index",
       "ath": 2861.21,
-      "athDate": "2026-05-08"
+      "athDate": "2026-03-01"
     },
     "VWRA.L": {
-      "price": 186.2,
-      "change": 0.16,
-      "changePct": 0.086,
+      "price": 185.98,
+      "change": -0.22,
+      "changePct": -0.1182,
       "high52": 202.3,
-      "low52": 140.5,
-      "volume": 113807,
+      "low52": 142.6,
+      "volume": 128768,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF",
       "ath": 186.2,
-      "athDate": "2026-05-08"
+      "athDate": "2026-05-03"
     },
     "XNAS.L": {
-      "price": 67.4,
-      "change": 0.71,
-      "changePct": 1.0646,
-      "high52": 67.4,
-      "low52": 46.25,
-      "volume": 16385,
+      "price": 67.73,
+      "change": 0.33,
+      "changePct": 0.4896,
+      "high52": 67.73,
+      "low52": 47.315,
+      "volume": 2988,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
-      "ath": 67.4,
-      "athDate": "2026-05-08"
+      "ath": 67.73,
+      "athDate": "2026-05-11"
     },
     "USDSGD=X": {
-      "price": 1.2666,
-      "change": -0.0025,
-      "changePct": -0.2001,
+      "price": 1.2693,
+      "change": 0.0002,
+      "changePct": 0.0126,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -101,16 +101,16 @@
   "movers": {
     "NVDA": {
       "name": "NVIDIA Corporation",
-      "price": 215.2,
+      "price": 215.22,
       "currency": "USD",
-      "dailyPct": 1.75,
-      "week1Pct": 8.44,
-      "week2Pct": 3.33,
+      "dailyPct": 1.76,
+      "week1Pct": 8.45,
+      "week2Pct": 3.34,
       "week4Pct": 14.09,
       "sma200": 184.73,
-      "vsSma200Pct": 16.49,
+      "vsSma200Pct": 16.5,
       "high52": 217.8,
-      "low52": 115.21
+      "low52": 120.28
     },
     "AMD": {
       "name": "Advanced Micro Devices, Inc.",
@@ -122,8 +122,8 @@
       "week4Pct": 85.76,
       "sma200": 217.35,
       "vsSma200Pct": 109.43,
-      "high52": 456.25,
-      "low52": 101.6
+      "high52": 456.29,
+      "low52": 106.98
     },
     "TSLA": {
       "name": "Tesla, Inc.",
@@ -149,7 +149,7 @@
       "sma200": 163.93,
       "vsSma200Pct": -15.94,
       "high52": 207.52,
-      "low52": 114.9
+      "low52": 115.01
     },
     "META": {
       "name": "Meta Platforms, Inc.",
@@ -166,29 +166,29 @@
     },
     "MSFT": {
       "name": "Microsoft Corporation",
-      "price": 415.12,
+      "price": 415.06,
       "currency": "USD",
-      "dailyPct": -1.34,
-      "week1Pct": 0.16,
-      "week2Pct": -2.24,
-      "week4Pct": 11.93,
+      "dailyPct": -1.36,
+      "week1Pct": 0.15,
+      "week2Pct": -2.25,
+      "week4Pct": 11.92,
       "sma200": 465.66,
-      "vsSma200Pct": -10.85,
+      "vsSma200Pct": -10.87,
       "high52": 555.45,
       "low52": 356.28
     },
     "GOOGL": {
       "name": "Alphabet Inc.",
-      "price": 400.8,
+      "price": 400.71,
       "currency": "USD",
-      "dailyPct": 0.71,
-      "week1Pct": 3.92,
-      "week2Pct": 16.38,
-      "week4Pct": 26.34,
+      "dailyPct": 0.68,
+      "week1Pct": 3.9,
+      "week2Pct": 16.35,
+      "week4Pct": 26.31,
       "sma200": 286.27,
-      "vsSma200Pct": 40.01,
+      "vsSma200Pct": 39.98,
       "high52": 402.0,
-      "low52": 152.2
+      "low52": 156.16
     },
     "AMZN": {
       "name": "Amazon.com, Inc.",
@@ -201,7 +201,7 @@
       "sma200": 228.52,
       "vsSma200Pct": 19.32,
       "high52": 278.56,
-      "low52": 191.16
+      "low52": 196.0
     },
     "AVGO": {
       "name": "Broadcom Inc.",
@@ -214,7 +214,7 @@
       "sma200": 343.55,
       "vsSma200Pct": 25.16,
       "high52": 437.68,
-      "low52": 206.52
+      "low52": 215.88
     },
     "CRWD": {
       "name": "CrowdStrike Holdings, Inc.",
@@ -244,16 +244,16 @@
     },
     "MU": {
       "name": "Micron Technology, Inc.",
-      "price": 746.81,
+      "price": 746.79,
       "currency": "USD",
       "dailyPct": 15.49,
       "week1Pct": 37.73,
-      "week2Pct": 50.35,
+      "week2Pct": 50.34,
       "week4Pct": 77.56,
       "sma200": 290.6,
-      "vsSma200Pct": 156.99,
+      "vsSma200Pct": 156.98,
       "high52": 747.21,
-      "low52": 84.68
+      "low52": 90.93
     },
     "ARM": {
       "name": "Arm Holdings plc",
@@ -283,14 +283,14 @@
     },
     "NFLX": {
       "name": "Netflix, Inc.",
-      "price": 87.49,
+      "price": 87.48,
       "currency": "USD",
-      "dailyPct": -0.86,
-      "week1Pct": -4.96,
-      "week2Pct": -5.35,
-      "week4Pct": -15.07,
+      "dailyPct": -0.88,
+      "week1Pct": -4.98,
+      "week2Pct": -5.37,
+      "week4Pct": -15.08,
       "sma200": 103.34,
-      "vsSma200Pct": -15.34,
+      "vsSma200Pct": -15.35,
       "high52": 134.115,
       "low52": 75.01
     },
@@ -348,27 +348,27 @@
     },
     "SHOP": {
       "name": "Shopify Inc.",
-      "price": 110.41,
+      "price": 110.5,
       "currency": "USD",
-      "dailyPct": -1.19,
-      "week1Pct": -13.52,
-      "week2Pct": -12.25,
-      "week4Pct": -0.34,
+      "dailyPct": -1.11,
+      "week1Pct": -13.44,
+      "week2Pct": -12.18,
+      "week4Pct": -0.26,
       "sma200": 141.67,
-      "vsSma200Pct": -22.07,
+      "vsSma200Pct": -22.0,
       "high52": 182.19,
-      "low52": 88.9
+      "low52": 99.01
     },
     "INTC": {
       "name": "Intel Corporation",
-      "price": 124.92,
+      "price": 124.89,
       "currency": "USD",
-      "dailyPct": 13.96,
-      "week1Pct": 25.4,
-      "week2Pct": 51.34,
-      "week4Pct": 100.26,
+      "dailyPct": 13.93,
+      "week1Pct": 25.37,
+      "week2Pct": 51.31,
+      "week4Pct": 100.22,
       "sma200": 42.34,
-      "vsSma200Pct": 195.04,
+      "vsSma200Pct": 194.98,
       "high52": 130.57,
       "low52": 18.97
     },
