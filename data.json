@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-11 21:42:29",
+  "updated": "2026-05-12 08:45:38",
   "data": {
     "^VIX": {
-      "price": 18.38,
-      "change": 1.19,
-      "changePct": 6.9226,
+      "price": 18.85,
+      "change": 0.47,
+      "changePct": 2.5571,
       "high52": 35.3,
       "low52": 13.38,
       "volume": 0,
@@ -23,19 +23,19 @@
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
       "ath": 49704.47,
-      "athDate": "2026-05-11"
+      "athDate": "2026-05-01"
     },
     "^NDX": {
       "price": 29320.656,
       "change": 85.6658,
       "changePct": 0.293,
       "high52": 29372.432,
-      "low52": 20613.27,
+      "low52": 20777.97,
       "volume": 1420168000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 29320.66,
-      "athDate": "2026-05-11"
+      "athDate": "2026-04-01"
     },
     "^GSPC": {
       "price": 7412.84,
@@ -47,11 +47,11 @@
       "currency": "USD",
       "name": "S&P 500",
       "ath": 7412.84,
-      "athDate": "2026-05-11"
+      "athDate": "2026-03-01"
     },
     "^RUT": {
-      "price": 2870.6404,
-      "change": 9.4304,
+      "price": 2870.64,
+      "change": 9.43,
       "changePct": 0.3296,
       "high52": 2888.62,
       "low52": 2011.2,
@@ -62,33 +62,33 @@
       "athDate": "2026-05-11"
     },
     "VWRA.L": {
-      "price": 186.88,
-      "change": 0.68,
-      "changePct": 0.3652,
+      "price": 185.4,
+      "change": null,
+      "changePct": null,
       "high52": 202.3,
       "low52": 142.6,
-      "volume": 271770,
+      "volume": 71975,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF",
-      "ath": 186.88,
-      "athDate": "2026-05-11"
+      "ath": 186.2,
+      "athDate": "2026-05-03"
     },
     "XNAS.L": {
-      "price": 67.94,
-      "change": 0.54,
-      "changePct": 0.8012,
-      "high52": 67.96,
-      "low52": 47.315,
-      "volume": 18003,
+      "price": 67.47,
+      "change": null,
+      "changePct": null,
+      "high52": 67.54,
+      "low52": 47.775,
+      "volume": 13661,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
-      "ath": 67.94,
-      "athDate": "2026-05-11"
+      "ath": 67.47,
+      "athDate": "2026-05-12"
     },
     "USDSGD=X": {
-      "price": 1.2681,
-      "change": 0.0001,
-      "changePct": 0.0063,
+      "price": 1.2725,
+      "change": null,
+      "changePct": null,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -110,7 +110,7 @@
       "sma200": 184.96,
       "vsSma200Pct": 18.64,
       "high52": 222.3,
-      "low52": 120.28
+      "low52": 124.47
     },
     "AMD": {
       "name": "Advanced Micro Devices, Inc.",
@@ -122,8 +122,8 @@
       "week4Pct": 85.87,
       "sma200": 218.84,
       "vsSma200Pct": 109.65,
-      "high52": 469.215,
-      "low52": 106.98
+      "high52": 469.22,
+      "low52": 107.67
     },
     "TSLA": {
       "name": "Tesla, Inc.",
@@ -149,7 +149,7 @@
       "sma200": 163.84,
       "vsSma200Pct": -16.45,
       "high52": 207.52,
-      "low52": 115.01
+      "low52": 118.93
     },
     "META": {
       "name": "Meta Platforms, Inc.",
@@ -214,7 +214,7 @@
       "sma200": 344.24,
       "vsSma200Pct": 24.46,
       "high52": 437.68,
-      "low52": 215.88
+      "low52": 221.6
     },
     "CRWD": {
       "name": "CrowdStrike Holdings, Inc.",
@@ -357,7 +357,7 @@
       "sma200": 141.57,
       "vsSma200Pct": -27.57,
       "high52": 182.19,
-      "low52": 99.01
+      "low52": 100.31
     },
     "INTC": {
       "name": "Intel Corporation",
