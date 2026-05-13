@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-12 21:40:58",
+  "updated": "2026-05-13 08:49:34",
   "data": {
     "^VIX": {
-      "price": 17.99,
-      "change": -0.39,
-      "changePct": -2.1219,
+      "price": 17.85,
+      "change": -0.14,
+      "changePct": -0.7782,
       "high52": 35.3,
       "low52": 13.38,
       "volume": 0,
@@ -23,7 +23,7 @@
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
       "ath": 49760.56,
-      "athDate": "2026-05-12"
+      "athDate": "2026-05-01"
     },
     "^NDX": {
       "price": 29064.799,
@@ -34,7 +34,7 @@
       "volume": 1354084000,
       "currency": "USD",
       "name": "NASDAQ-100",
-      "ath": 29320.66,
+      "ath": 29064.8,
       "athDate": "2026-04-01"
     },
     "^GSPC": {
@@ -46,7 +46,7 @@
       "volume": 3217693000,
       "currency": "USD",
       "name": "S&P 500",
-      "ath": 7412.84,
+      "ath": 7400.96,
       "athDate": "2026-03-01"
     },
     "^RUT": {
@@ -58,37 +58,37 @@
       "volume": 0,
       "currency": "USD",
       "name": " Russell 2000 Index",
-      "ath": 2870.64,
-      "athDate": "2026-03-01"
+      "ath": 2842.83,
+      "athDate": "2026-05-12"
     },
     "VWRA.L": {
-      "price": 184.2,
-      "change": -2.68,
-      "changePct": -1.4341,
+      "price": 186.48,
+      "change": 2.28,
+      "changePct": 1.2378,
       "high52": 202.3,
       "low52": 142.6,
-      "volume": 217175,
+      "volume": 22129,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF",
-      "ath": 186.88,
-      "athDate": "2026-05-10"
+      "ath": 186.48,
+      "athDate": "2026-05-13"
     },
     "XNAS.L": {
-      "price": 66.75,
-      "change": -1.19,
-      "changePct": -1.7515,
-      "high52": 67.57,
+      "price": 67.98,
+      "change": 1.23,
+      "changePct": 1.8427,
+      "high52": 67.98,
       "low52": 47.775,
-      "volume": 32692,
+      "volume": 694,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
-      "ath": 67.94,
-      "athDate": "2026-05-10"
+      "ath": 67.98,
+      "athDate": "2026-05-13"
     },
     "USDSGD=X": {
-      "price": 1.271,
-      "change": 0.002,
-      "changePct": 0.1592,
+      "price": 1.2724,
+      "change": null,
+      "changePct": null,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -110,7 +110,7 @@
       "sma200": 185.2,
       "vsSma200Pct": 19.21,
       "high52": 223.75,
-      "low52": 124.47
+      "low52": 129.16
     },
     "AMD": {
       "name": "Advanced Micro Devices, Inc.",
@@ -188,7 +188,7 @@
       "sma200": 288.23,
       "vsSma200Pct": 34.39,
       "high52": 402.0,
-      "low52": 156.16
+      "low52": 159.61
     },
     "AMZN": {
       "name": "Amazon.com, Inc.",
