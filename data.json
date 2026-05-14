@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-13 21:47:05",
+  "updated": "2026-05-14 08:42:26",
   "data": {
     "^VIX": {
-      "price": 17.87,
-      "change": -0.12,
-      "changePct": -0.667,
+      "price": 17.81,
+      "change": -0.06,
+      "changePct": -0.3358,
       "high52": 35.3,
       "low52": 13.38,
       "volume": 0,
@@ -22,14 +22,14 @@
       "volume": 491982845,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
-      "ath": 49760.56,
+      "ath": 49693.2,
       "athDate": "2026-05-01"
     },
     "^NDX": {
       "price": 29366.943,
       "change": 302.1422,
       "changePct": 1.0395,
-      "high52": 29452.256,
+      "high52": 29452.26,
       "low52": 20777.97,
       "volume": 1293719000,
       "currency": "USD",
@@ -47,7 +47,7 @@
       "currency": "USD",
       "name": "S&P 500",
       "ath": 7444.25,
-      "athDate": "2026-05-13"
+      "athDate": "2026-03-01"
     },
     "^RUT": {
       "price": 2843.932,
@@ -62,33 +62,33 @@
       "athDate": "2026-05-13"
     },
     "VWRA.L": {
-      "price": 186.4,
-      "change": 2.2,
-      "changePct": 1.1944,
+      "price": 187.18,
+      "change": 0.78,
+      "changePct": 0.4185,
       "high52": 202.3,
       "low52": 142.6,
-      "volume": 99182,
+      "volume": 45626,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF",
-      "ath": 186.4,
-      "athDate": "2026-05-13"
+      "ath": 187.18,
+      "athDate": "2026-05-14"
     },
     "XNAS.L": {
-      "price": 67.71,
-      "change": 0.96,
-      "changePct": 1.4382,
-      "high52": 68.01,
+      "price": 68.37,
+      "change": 0.66,
+      "changePct": 0.9747,
+      "high52": 68.45,
       "low52": 47.775,
-      "volume": 12082,
+      "volume": 1261,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
-      "ath": 67.71,
-      "athDate": "2026-05-13"
+      "ath": 68.37,
+      "athDate": "2026-05-14"
     },
     "USDSGD=X": {
-      "price": 1.271,
-      "change": -0.0008,
-      "changePct": -0.0621,
+      "price": 1.2731,
+      "change": null,
+      "changePct": null,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -188,7 +188,7 @@
       "sma200": 289.28,
       "vsSma200Pct": 39.18,
       "high52": 403.7,
-      "low52": 159.61
+      "low52": 162.0
     },
     "AMZN": {
       "name": "Amazon.com, Inc.",
