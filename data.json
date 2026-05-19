@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-18 21:41:20",
+  "updated": "2026-05-19 09:53:21",
   "data": {
     "^VIX": {
-      "price": 17.82,
-      "change": -0.61,
-      "changePct": -3.3098,
+      "price": 18.29,
+      "change": 0.47,
+      "changePct": 2.6375,
       "high52": 35.3,
       "low52": 13.38,
       "volume": 0,
@@ -23,7 +23,7 @@
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
       "ath": 49686.12,
-      "athDate": "2026-05-18"
+      "athDate": "2026-05-01"
     },
     "^NDX": {
       "price": 28994.37,
@@ -34,7 +34,7 @@
       "volume": 1229646000,
       "currency": "USD",
       "name": "NASDAQ-100",
-      "ath": 29125.2,
+      "ath": 28994.37,
       "athDate": "2026-04-01"
     },
     "^GSPC": {
@@ -46,7 +46,7 @@
       "volume": 3110807000,
       "currency": "USD",
       "name": "S&P 500",
-      "ath": 7408.5,
+      "ath": 7403.05,
       "athDate": "2026-03-01"
     },
     "^RUT": {
@@ -58,37 +58,37 @@
       "volume": 0,
       "currency": "USD",
       "name": " Russell 2000 Index",
-      "ath": 2793.3,
-      "athDate": "2026-03-01"
+      "ath": 2775.1,
+      "athDate": "2026-05-18"
     },
     "VWRA.L": {
-      "price": 184.48,
-      "change": -0.8,
-      "changePct": -0.4318,
+      "price": 184.18,
+      "change": -0.3,
+      "changePct": -0.1626,
       "high52": 202.3,
       "low52": 142.6,
-      "volume": 198460,
+      "volume": 46961,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF",
       "ath": 186.2,
       "athDate": "2026-05-03"
     },
     "XNAS.L": {
-      "price": 67.05,
-      "change": -0.75,
-      "changePct": -1.1062,
+      "price": 66.7,
+      "change": -0.35,
+      "changePct": -0.522,
       "high52": 68.77,
       "low52": 47.775,
-      "volume": 16052,
+      "volume": 14663,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
       "ath": 67.8,
       "athDate": "2026-05-10"
     },
     "USDSGD=X": {
-      "price": 1.278,
-      "change": -0.0032,
-      "changePct": -0.2529,
+      "price": 1.2811,
+      "change": null,
+      "changePct": null,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -214,7 +214,7 @@
       "sma200": 347.46,
       "vsSma200Pct": 21.08,
       "high52": 442.36,
-      "low52": 221.6
+      "low52": 226.18
     },
     "CRWD": {
       "name": "CrowdStrike Holdings, Inc.",
