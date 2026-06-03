@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-02 22:36:24",
+  "updated": "2026-06-03 11:06:35",
   "data": {
     "^VIX": {
-      "price": 15.77,
-      "change": -0.28,
-      "changePct": -1.7445,
+      "price": 16.1,
+      "change": 0.33,
+      "changePct": 2.0926,
       "high52": 35.3,
       "low52": 13.38,
       "volume": 0,
@@ -23,7 +23,7 @@
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
       "ath": 51307.79,
-      "athDate": "2026-06-02"
+      "athDate": "2026-06-01"
     },
     "^NDX": {
       "price": 30660.602,
@@ -47,14 +47,14 @@
       "currency": "USD",
       "name": "S&P 500",
       "ath": 7609.78,
-      "athDate": "2026-06-02"
+      "athDate": "2026-06-01"
     },
     "^RUT": {
-      "price": 2931.9634,
-      "change": 26.2034,
+      "price": 2931.963,
+      "change": 26.203,
       "changePct": 0.9018,
       "high52": 2942.61,
-      "low52": 2070.86,
+      "low52": 2086.79,
       "volume": 0,
       "currency": "USD",
       "name": " Russell 2000 Index",
@@ -62,33 +62,33 @@
       "athDate": "2026-06-02"
     },
     "VWRA.L": {
-      "price": 191.84,
-      "change": 1.3,
-      "changePct": 0.6823,
+      "price": 191.42,
+      "change": -0.42,
+      "changePct": -0.2189,
       "high52": 202.3,
-      "low52": 146.1,
-      "volume": 177325,
+      "low52": 146.34,
+      "volume": 71059,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF",
       "ath": 191.84,
-      "athDate": "2026-06-02"
+      "athDate": "2026-05-31"
     },
     "XNAS.L": {
-      "price": 70.99,
-      "change": 0.34,
-      "changePct": 0.4812,
-      "high52": 70.99,
-      "low52": 49.36,
-      "volume": 38402,
+      "price": 71.19,
+      "change": 0.2,
+      "changePct": 0.2817,
+      "high52": 71.21,
+      "low52": 49.615,
+      "volume": 2881,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
-      "ath": 70.99,
-      "athDate": "2026-06-02"
+      "ath": 71.19,
+      "athDate": "2026-06-03"
     },
     "USDSGD=X": {
-      "price": 1.2795,
-      "change": 0.0012,
-      "changePct": 0.0931,
+      "price": 1.2816,
+      "change": null,
+      "changePct": null,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -110,7 +110,7 @@
       "sma200": 188.07,
       "vsSma200Pct": 18.48,
       "high52": 236.54,
-      "low52": 137.95
+      "low52": 138.83
     },
     "AMD": {
       "name": "Advanced Micro Devices, Inc.",
@@ -123,7 +123,7 @@
       "sma200": 240.91,
       "vsSma200Pct": 116.49,
       "high52": 527.2,
-      "low52": 113.28
+      "low52": 114.71
     },
     "TSLA": {
       "name": "Tesla, Inc.",
@@ -252,8 +252,8 @@
       "week4Pct": 84.6,
       "sma200": 347.99,
       "vsSma200Pct": 205.78,
-      "high52": 1076.519,
-      "low52": 96.96
+      "high52": 1076.56,
+      "low52": 101.7
     },
     "ARM": {
       "name": "Arm Holdings plc",
@@ -279,7 +279,7 @@
       "sma200": 100.21,
       "vsSma200Pct": 190.18,
       "high52": 291.3,
-      "low52": 61.15
+      "low52": 61.44
     },
     "NFLX": {
       "name": "Netflix, Inc.",
