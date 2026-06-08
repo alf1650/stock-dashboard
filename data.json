@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-05 21:58:08",
+  "updated": "2026-06-08 11:03:24",
   "data": {
     "^VIX": {
-      "price": 21.51,
-      "change": 6.11,
-      "changePct": 39.6753,
+      "price": 19.61,
+      "change": -1.9,
+      "changePct": -8.8331,
       "high52": 35.3,
       "low52": 13.38,
       "volume": 0,
@@ -22,8 +22,8 @@
       "volume": 643352754,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
-      "ath": 51561.93,
-      "athDate": "2026-06-01"
+      "ath": 51032.46,
+      "athDate": "2026-05-01"
     },
     "^NDX": {
       "price": 28957.6,
@@ -34,7 +34,7 @@
       "volume": 1727122000,
       "currency": "USD",
       "name": "NASDAQ-100",
-      "ath": 30407.81,
+      "ath": 28957.6,
       "athDate": "2026-04-01"
     },
     "^GSPC": {
@@ -46,8 +46,8 @@
       "volume": 3567472000,
       "currency": "USD",
       "name": "S&P 500",
-      "ath": 7584.31,
-      "athDate": "2026-06-01"
+      "ath": 7580.06,
+      "athDate": "2026-03-01"
     },
     "^RUT": {
       "price": 2833.501,
@@ -58,37 +58,37 @@
       "volume": 0,
       "currency": "USD",
       "name": " Russell 2000 Index",
-      "ath": 2935.33,
-      "athDate": "2026-06-01"
+      "ath": 2919.34,
+      "athDate": "2026-03-01"
     },
     "VWRA.L": {
-      "price": 187.36,
-      "change": -3.04,
-      "changePct": -1.5966,
+      "price": 185.84,
+      "change": -1.52,
+      "changePct": -0.8113,
       "high52": 202.3,
       "low52": 146.34,
-      "volume": 222765,
+      "volume": 136741,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF",
       "ath": 190.54,
       "athDate": "2026-05-24"
     },
     "XNAS.L": {
-      "price": 68.74,
-      "change": -1.71,
-      "changePct": -2.4272,
+      "price": 67.69,
+      "change": -1.05,
+      "changePct": -1.5275,
       "high52": 71.25,
       "low52": 49.615,
-      "volume": 39367,
+      "volume": 15559,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
-      "ath": 70.45,
-      "athDate": "2026-05-31"
+      "ath": 70.34,
+      "athDate": "2026-05-24"
     },
     "USDSGD=X": {
-      "price": 1.2899,
-      "change": 0.0052,
-      "changePct": 0.4055,
+      "price": 1.2885,
+      "change": 0.0038,
+      "changePct": 0.2966,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
