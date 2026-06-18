@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-17 20:53:30",
+  "updated": "2026-06-18 07:52:37",
   "data": {
     "^VIX": {
-      "price": 18.44,
-      "change": 2.03,
-      "changePct": 12.3705,
+      "price": 17.13,
+      "change": -1.31,
+      "changePct": -7.1041,
       "high52": 35.3,
       "low52": 13.38,
       "volume": 0,
@@ -22,7 +22,7 @@
       "volume": 496041891,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
-      "ath": 51999.67,
+      "ath": 51492.55,
       "athDate": "2026-06-01"
     },
     "^NDX": {
@@ -31,10 +31,10 @@
       "changePct": -0.9917,
       "high52": 30762.2,
       "low52": 21532.32,
-      "volume": 1280710000,
+      "volume": 1289122000,
       "currency": "USD",
       "name": "NASDAQ-100",
-      "ath": 29968.13,
+      "ath": 29670.95,
       "athDate": "2026-04-01"
     },
     "^GSPC": {
@@ -58,37 +58,37 @@
       "volume": 0,
       "currency": "USD",
       "name": " Russell 2000 Index",
-      "ath": 2939.2,
-      "athDate": "2026-06-01"
+      "ath": 2919.34,
+      "athDate": "2026-03-01"
     },
     "VWRA.L": {
-      "price": 190.88,
-      "change": 0.34,
-      "changePct": 0.1784,
+      "price": 190.08,
+      "change": -0.8,
+      "changePct": -0.4191,
       "high52": 202.3,
       "low52": 146.34,
-      "volume": 161904,
+      "volume": 60354,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF",
       "ath": 190.88,
-      "athDate": "2026-06-17"
+      "athDate": "2026-06-14"
     },
     "XNAS.L": {
-      "price": 69.86,
-      "change": -0.21,
-      "changePct": -0.2997,
+      "price": 69.83,
+      "change": -0.03,
+      "changePct": -0.0429,
       "high52": 71.25,
       "low52": 49.615,
-      "volume": 16031,
+      "volume": 2403,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
       "ath": 70.34,
       "athDate": "2026-05-24"
     },
     "USDSGD=X": {
-      "price": 1.2882,
-      "change": 0.0059,
-      "changePct": 0.464,
+      "price": 1.2877,
+      "change": null,
+      "changePct": null,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -123,7 +123,7 @@
       "sma200": 259.28,
       "vsSma200Pct": 97.66,
       "high52": 558.37,
-      "low52": 125.77
+      "low52": 126.82
     },
     "TSLA": {
       "name": "Tesla, Inc.",
