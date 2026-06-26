@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26 20:41:05",
+  "updated": "2026-06-26 21:14:00",
   "data": {
     "^VIX": {
       "price": 18.41,
@@ -19,7 +19,7 @@
       "changePct": -0.0857,
       "high52": 52655.66,
       "low52": 43340.68,
-      "volume": 1297695523,
+      "volume": 1321068148,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
       "ath": 51920.62,
@@ -31,7 +31,7 @@
       "changePct": -1.094,
       "high52": 30762.2,
       "low52": 22382.79,
-      "volume": 2705631000,
+      "volume": 2708798000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 29440.32,
@@ -43,7 +43,7 @@
       "changePct": -0.0472,
       "high52": 7620.9,
       "low52": 6132.35,
-      "volume": 5786591000,
+      "volume": 5860380000,
       "currency": "USD",
       "name": "S&P 500",
       "ath": 7580.06,
@@ -86,9 +86,9 @@
       "athDate": "2026-06-14"
     },
     "USDSGD=X": {
-      "price": 1.2941,
-      "change": -0.0027,
-      "changePct": -0.209,
+      "price": 1.2931,
+      "change": -0.0037,
+      "changePct": -0.2861,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
