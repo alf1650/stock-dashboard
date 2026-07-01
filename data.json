@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-30 21:10:36",
+  "updated": "2026-07-01 07:40:29",
   "data": {
     "^VIX": {
-      "price": 16.45,
-      "change": -1.2,
-      "changePct": -6.7989,
+      "price": 17.1,
+      "change": 0.65,
+      "changePct": 3.9514,
       "high52": 35.3,
       "low52": 13.38,
       "volume": 0,
@@ -19,11 +19,11 @@
       "changePct": 0.2615,
       "high52": 52655.66,
       "low52": 43340.68,
-      "volume": 623046418,
+      "volume": 639535665,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
       "ath": 52319.2,
-      "athDate": "2026-06-30"
+      "athDate": "2026-06-01"
     },
     "^NDX": {
       "price": 30276.348,
@@ -31,11 +31,11 @@
       "changePct": 1.6846,
       "high52": 30762.2,
       "low52": 22388.09,
-      "volume": 1517595000,
+      "volume": 1519233000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 30276.35,
-      "athDate": "2026-06-30"
+      "athDate": "2026-04-01"
     },
     "^GSPC": {
       "price": 7499.36,
@@ -59,36 +59,36 @@
       "currency": "USD",
       "name": " Russell 2000 Index",
       "ath": 3024.37,
-      "athDate": "2026-06-30"
+      "athDate": "2026-06-01"
     },
     "VWRA.L": {
-      "price": 188.78,
-      "change": 2.12,
-      "changePct": 1.1358,
+      "price": 187.88,
+      "change": -0.9,
+      "changePct": -0.4767,
       "high52": 202.3,
       "low52": 152.0,
-      "volume": 136313,
+      "volume": 23760,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF",
       "ath": 190.54,
       "athDate": "2026-05-24"
     },
     "XNAS.L": {
-      "price": 69.93,
-      "change": 1.55,
-      "changePct": 2.2667,
+      "price": 69.74,
+      "change": -0.19,
+      "changePct": -0.2717,
       "high52": 71.25,
       "low52": 51.77,
-      "volume": 11277,
+      "volume": 1077,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
       "ath": 70.45,
       "athDate": "2026-06-14"
     },
     "USDSGD=X": {
-      "price": 1.2929,
-      "change": 0.0008,
-      "changePct": 0.0619,
+      "price": 1.2962,
+      "change": null,
+      "changePct": null,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -220,12 +220,12 @@
       "name": "CrowdStrike Holdings, Inc.",
       "price": 763.14,
       "currency": "USD",
-      "dailyPct": 2.72,
-      "week1Pct": 12.07,
-      "week2Pct": 10.14,
-      "week4Pct": -2.43,
-      "sma200": 499.22,
-      "vsSma200Pct": 52.87,
+      "dailyPct": 12.45,
+      "week1Pct": 11.43,
+      "week2Pct": 10.36,
+      "week4Pct": 13.73,
+      "sma200": 495.98,
+      "vsSma200Pct": 53.87,
       "high52": 785.66,
       "low52": 342.72
     },
