@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-03 13:37:23",
+  "updated": "2026-07-03 14:32:37",
   "data": {
     "^VIX": {
-      "price": 15.92,
-      "change": -0.23,
-      "changePct": -1.4241,
+      "price": 15.9,
+      "change": -0.25,
+      "changePct": -1.548,
       "high52": 35.3,
       "low52": 13.38,
       "volume": 0,
@@ -50,8 +50,8 @@
       "athDate": "2026-03-01"
     },
     "^RUT": {
-      "price": 2996.11,
-      "change": -16.4801,
+      "price": 2996.1104,
+      "change": -16.4797,
       "changePct": -0.547,
       "high52": 3046.59,
       "low52": 2143.43,
@@ -62,24 +62,24 @@
       "athDate": "2026-07-02"
     },
     "VWRA.L": {
-      "price": 189.68,
-      "change": 0.86,
-      "changePct": 0.4555,
+      "price": 189.84,
+      "change": 1.02,
+      "changePct": 0.5402,
       "high52": 202.3,
       "low52": 152.0,
-      "volume": 55280,
+      "volume": 59066,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF",
       "ath": 190.54,
       "athDate": "2026-05-24"
     },
     "XNAS.L": {
-      "price": 68.77,
-      "change": 0.35,
-      "changePct": 0.5115,
+      "price": 68.84,
+      "change": 0.42,
+      "changePct": 0.6139,
       "high52": 71.25,
       "low52": 52.32,
-      "volume": 5985,
+      "volume": 6080,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
       "ath": 70.45,
