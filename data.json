@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-03 15:29:57",
+  "updated": "2026-07-03 16:08:12",
   "data": {
     "^VIX": {
-      "price": 15.8,
-      "change": -0.35,
-      "changePct": -2.1672,
+      "price": 15.81,
+      "change": -0.34,
+      "changePct": -2.1053,
       "high52": 35.3,
       "low52": 13.38,
       "volume": 0,
@@ -62,31 +62,31 @@
       "athDate": "2026-07-02"
     },
     "VWRA.L": {
-      "price": 189.92,
-      "change": 1.1,
-      "changePct": 0.5826,
+      "price": 189.82,
+      "change": 1.0,
+      "changePct": 0.5296,
       "high52": 202.3,
       "low52": 152.0,
-      "volume": 67173,
+      "volume": 75063,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF",
       "ath": 190.54,
       "athDate": "2026-05-24"
     },
     "XNAS.L": {
-      "price": 68.81,
-      "change": 0.39,
-      "changePct": 0.57,
+      "price": 68.78,
+      "change": 0.36,
+      "changePct": 0.5262,
       "high52": 71.25,
       "low52": 52.32,
-      "volume": 6129,
+      "volume": 6496,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
       "ath": 70.45,
       "athDate": "2026-06-14"
     },
     "USDSGD=X": {
-      "price": 1.2914,
+      "price": 1.2915,
       "change": null,
       "changePct": null,
       "high52": 1.3096,
