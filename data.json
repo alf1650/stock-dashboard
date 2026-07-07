@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-07 20:26:52",
+  "updated": "2026-07-07 21:04:38",
   "data": {
     "^VIX": {
-      "price": 16.11,
-      "change": 0.54,
-      "changePct": 3.4682,
+      "price": 16.13,
+      "change": 0.56,
+      "changePct": 3.5967,
       "high52": 35.3,
       "low52": 13.38,
       "volume": 0,
@@ -19,7 +19,7 @@
       "changePct": -0.2465,
       "high52": 53289.3,
       "low52": 43340.68,
-      "volume": 442022019,
+      "volume": 443184789,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
       "ath": 52925.15,
@@ -31,11 +31,11 @@
       "changePct": -1.7673,
       "high52": 30762.2,
       "low52": 22652.44,
-      "volume": 1364240000,
+      "volume": 1376540000,
       "currency": "USD",
       "name": "NASDAQ-100",
-      "ath": null,
-      "athDate": null
+      "ath": 30276.35,
+      "athDate": "2026-04-01"
     },
     "^GSPC": {
       "price": 7503.85,
@@ -43,7 +43,7 @@
       "changePct": -0.4455,
       "high52": 7620.9,
       "low52": 6201.59,
-      "volume": 2976189000,
+      "volume": 2991356000,
       "currency": "USD",
       "name": "S&P 500",
       "ath": 7580.06,
@@ -86,9 +86,9 @@
       "athDate": "2026-06-14"
     },
     "USDSGD=X": {
-      "price": 1.2929,
-      "change": 0.0012,
-      "changePct": 0.0945,
+      "price": 1.2918,
+      "change": 0.0001,
+      "changePct": 0.0093,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -177,7 +177,19 @@
       "high52": 555.45,
       "low52": 349.2
     },
-    "GOOGL": null,
+    "GOOGL": {
+      "name": "Alphabet Inc.",
+      "price": 367.03,
+      "currency": "USD",
+      "dailyPct": 0.16,
+      "week1Pct": 3.78,
+      "week2Pct": 4.96,
+      "week4Pct": -0.41,
+      "sma200": 317.32,
+      "vsSma200Pct": 15.67,
+      "high52": 408.61,
+      "low52": 172.77
+    },
     "AMZN": {
       "name": "Amazon.com, Inc.",
       "price": 245.98,
@@ -204,7 +216,19 @@
       "high52": 495.0,
       "low52": 269.58
     },
-    "CRWD": null,
+    "CRWD": {
+      "name": "CrowdStrike Holdings, Inc.",
+      "price": 194.62,
+      "currency": "USD",
+      "dailyPct": -2.39,
+      "week1Pct": 4.79,
+      "week2Pct": 15.26,
+      "week4Pct": 16.01,
+      "sma200": 126.5,
+      "vsSma200Pct": 53.85,
+      "high52": 209.5,
+      "low52": 85.68
+    },
     "SMCI": {
       "name": "Super Micro Computer, Inc.",
       "price": 26.25,
