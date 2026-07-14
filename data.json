@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14 20:29:34",
+  "updated": "2026-07-14 20:55:49",
   "data": {
     "^VIX": {
       "price": 16.5,
@@ -31,7 +31,7 @@
       "changePct": 1.101,
       "high52": 30762.2,
       "low52": 22669.37,
-      "volume": 1118414000,
+      "volume": 1133621000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 30276.35,
@@ -86,9 +86,9 @@
       "athDate": "2026-06-14"
     },
     "USDSGD=X": {
-      "price": 1.2912,
-      "change": -0.0029,
-      "changePct": -0.2233,
+      "price": 1.2902,
+      "change": -0.0039,
+      "changePct": -0.3006,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -305,7 +305,7 @@
       "sma200": 193.91,
       "vsSma200Pct": -34.02,
       "high52": 345.72,
-      "low52": 127.6
+      "low52": 127.83
     },
     "NOW": {
       "name": "ServiceNow, Inc.",
