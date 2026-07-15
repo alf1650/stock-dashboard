@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15 20:37:36",
+  "updated": "2026-07-15 21:09:11",
   "data": {
     "^VIX": {
       "price": 15.67,
@@ -31,7 +31,7 @@
       "changePct": -0.2829,
       "high52": 30762.2,
       "low52": 22669.37,
-      "volume": 1352046000,
+      "volume": 1355795000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 30276.35,
@@ -86,9 +86,9 @@
       "athDate": "2026-06-14"
     },
     "USDSGD=X": {
-      "price": 1.2887,
-      "change": -0.002,
-      "changePct": -0.1534,
+      "price": 1.2886,
+      "change": -0.0021,
+      "changePct": -0.1612,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -177,7 +177,19 @@
       "high52": 555.45,
       "low52": 349.2
     },
-    "GOOGL": null,
+    "GOOGL": {
+      "name": "Alphabet Inc.",
+      "price": 370.92,
+      "currency": "USD",
+      "dailyPct": 3.17,
+      "week1Pct": 2.49,
+      "week2Pct": 3.79,
+      "week4Pct": 0.43,
+      "sma200": 320.6,
+      "vsSma200Pct": 15.7,
+      "high52": 408.61,
+      "low52": 180.48
+    },
     "AMZN": {
       "name": "Amazon.com, Inc.",
       "price": 254.96,
