@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-17 21:05:35",
+  "updated": "2026-07-20 07:14:02",
   "data": {
     "^VIX": {
       "price": 18.77,
-      "change": 2.04,
-      "changePct": 12.1937,
+      "change": -0.0,
+      "changePct": -0.0,
       "high52": 35.3,
       "low52": 13.38,
       "volume": 0,
@@ -22,8 +22,8 @@
       "volume": 549691647,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
-      "ath": 52552.97,
-      "athDate": "2026-07-01"
+      "ath": 52319.2,
+      "athDate": "2026-06-01"
     },
     "^NDX": {
       "price": 28592.658,
@@ -31,7 +31,7 @@
       "changePct": -1.4922,
       "high52": 30762.2,
       "low52": 22673.88,
-      "volume": 1615795000,
+      "volume": 1630670000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 30276.35,
@@ -58,16 +58,16 @@
       "volume": 0,
       "currency": "USD",
       "name": " Russell 2000 Index",
-      "ath": 2974.57,
+      "ath": 2962.22,
       "athDate": "2026-06-01"
     },
     "VWRA.L": {
       "price": 186.98,
-      "change": -2.44,
-      "changePct": -1.2881,
+      "change": 0.0,
+      "changePct": 0.0,
       "high52": 202.3,
       "low52": 140.22,
-      "volume": 489545,
+      "volume": 0,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF",
       "ath": 190.54,
@@ -75,20 +75,20 @@
     },
     "XNAS.L": {
       "price": 66.23,
-      "change": -1.62,
-      "changePct": -2.3876,
+      "change": -0.0,
+      "changePct": -0.0,
       "high52": 71.25,
       "low52": 52.53,
-      "volume": 61755,
+      "volume": 0,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
       "ath": 70.45,
       "athDate": "2026-06-14"
     },
     "USDSGD=X": {
-      "price": 1.2912,
-      "change": 0.0011,
-      "changePct": 0.0876,
+      "price": 1.291,
+      "change": 0.0009,
+      "changePct": 0.0721,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -188,7 +188,7 @@
       "sma200": 321.66,
       "vsSma200Pct": 7.81,
       "high52": 408.61,
-      "low52": 183.71
+      "low52": 186.15
     },
     "AMZN": {
       "name": "Amazon.com, Inc.",
@@ -292,7 +292,7 @@
       "sma200": 93.74,
       "vsSma200Pct": -26.45,
       "high52": 126.71,
-      "low52": 65.095
+      "low52": 65.08
     },
     "ORCL": {
       "name": "Oracle Corporation",
@@ -343,7 +343,7 @@
       "week4Pct": -4.73,
       "sma200": 222.73,
       "vsSma200Pct": -29.46,
-      "high52": 444.65,
+      "high52": 436.38,
       "low52": 139.18
     },
     "SHOP": {
