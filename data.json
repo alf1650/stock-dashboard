@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04 20:34:48",
+  "updated": "2026-08-04 21:11:17",
   "data": {
     "^VIX": {
       "price": 16.5,
@@ -19,7 +19,7 @@
       "changePct": 1.7065,
       "high52": 54272.6,
       "low52": 43799.2,
-      "volume": 578015584,
+      "volume": 580351963,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
       "ath": 54085.88,
@@ -31,7 +31,7 @@
       "changePct": 3.3234,
       "high52": 30762.2,
       "low52": 22841.42,
-      "volume": 1751482000,
+      "volume": 1785794000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 30276.35,
@@ -43,7 +43,7 @@
       "changePct": 1.7896,
       "high52": 7758.21,
       "low52": 6289.37,
-      "volume": 3686546000,
+      "volume": 3703215000,
       "currency": "USD",
       "name": "S&P 500",
       "ath": 7736.52,
