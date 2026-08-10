@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-07 20:50:48",
+  "updated": "2026-08-10 06:35:27",
   "data": {
     "^VIX": {
       "price": 14.9,
       "change": -0.25,
       "changePct": -1.6502,
       "high52": 35.3,
-      "low52": 13.38,
+      "low52": 0.0,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
@@ -17,13 +17,13 @@
       "price": 54036.93,
       "change": 151.8284,
       "changePct": 0.2818,
-      "high52": 54094.65,
+      "high52": 54744.33,
       "low52": 43911.31,
       "volume": 378681628,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
       "ath": 54036.93,
-      "athDate": "2026-08-07"
+      "athDate": "2026-08-01"
     },
     "^NDX": {
       "price": 29722.303,
@@ -31,7 +31,7 @@
       "changePct": 1.1881,
       "high52": 30762.2,
       "low52": 22841.42,
-      "volume": 1329019000,
+      "volume": 1334945000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 30276.35,
@@ -41,19 +41,19 @@
       "price": 7757.64,
       "change": 47.68,
       "changePct": 0.6184,
-      "high52": 7763.08,
+      "high52": 7793.68,
       "low52": 6316.91,
       "volume": 2719843000,
       "currency": "USD",
       "name": "S&P 500",
       "ath": 7757.64,
-      "athDate": "2026-08-07"
+      "athDate": "2026-06-01"
     },
     "^RUT": {
-      "price": 3034.4941,
-      "change": 32.9441,
+      "price": 3034.494,
+      "change": 32.944,
       "changePct": 1.0976,
-      "high52": 3046.59,
+      "high52": 3048.85,
       "low52": 2213.54,
       "volume": 0,
       "currency": "USD",
@@ -71,7 +71,7 @@
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF",
       "ath": 194.64,
-      "athDate": "2026-08-07"
+      "athDate": "2026-08-02"
     },
     "XNAS.L": {
       "price": 68.96,
@@ -86,9 +86,9 @@
       "athDate": "2026-06-14"
     },
     "USDSGD=X": {
-      "price": 1.2779,
-      "change": -0.0055,
-      "changePct": -0.4309,
+      "price": 1.279,
+      "change": -0.0044,
+      "changePct": -0.3452,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -226,7 +226,7 @@
       "week4Pct": 14.55,
       "sma200": 134.82,
       "vsSma200Pct": 59.04,
-      "high52": 217.5,
+      "high52": 219.35,
       "low52": 85.68
     },
     "SMCI": {
@@ -253,7 +253,7 @@
       "sma200": 535.02,
       "vsSma200Pct": 64.03,
       "high52": 1255.0,
-      "low52": 111.67
+      "low52": 113.46
     },
     "ARM": {
       "name": "Arm Holdings plc",
@@ -370,7 +370,7 @@
       "sma200": 68.58,
       "vsSma200Pct": 48.22,
       "high52": 142.35,
-      "low52": 19.61
+      "low52": 20.44
     },
     "LAC": {
       "name": "Lithium Americas Corp.",
