@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-14 20:42:46",
+  "updated": "2026-08-14 20:57:51",
   "data": {
     "^VIX": {
       "price": 14.25,
@@ -31,7 +31,7 @@
       "changePct": -0.1275,
       "high52": 30762.2,
       "low52": 22841.42,
-      "volume": 1049093000,
+      "volume": 1051130000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 30276.35,
@@ -86,9 +86,9 @@
       "athDate": "2026-06-14"
     },
     "USDSGD=X": {
-      "price": 1.2785,
-      "change": null,
-      "changePct": null,
+      "price": 1.2782,
+      "change": -0.0021,
+      "changePct": -0.1617,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
