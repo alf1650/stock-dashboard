@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-20 20:59:09",
+  "updated": "2026-08-21 06:13:49",
   "data": {
     "^VIX": {
       "price": 16.01,
       "change": 1.12,
       "changePct": 7.5218,
       "high52": 35.3,
-      "low52": 13.38,
+      "low52": 0.0,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
@@ -18,11 +18,11 @@
       "change": -703.8408,
       "changePct": -1.3165,
       "high52": 54744.33,
-      "low52": 44579.03,
-      "volume": 434378868,
+      "low52": 44948.16,
+      "volume": 445163800,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
-      "ath": 53463.05,
+      "ath": 52759.21,
       "athDate": "2026-08-01"
     },
     "^NDX": {
@@ -31,7 +31,7 @@
       "changePct": -0.7234,
       "high52": 30762.2,
       "low52": 22841.42,
-      "volume": 1153518000,
+      "volume": 1172482000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 30276.35,
@@ -43,10 +43,10 @@
       "changePct": -0.8669,
       "high52": 7816.7,
       "low52": 6316.91,
-      "volume": 2690755000,
+      "volume": 2706581000,
       "currency": "USD",
       "name": "S&P 500",
-      "ath": 7707.98,
+      "ath": 7641.16,
       "athDate": "2026-06-01"
     },
     "^RUT": {
@@ -58,16 +58,16 @@
       "volume": 0,
       "currency": "USD",
       "name": " Russell 2000 Index",
-      "ath": 3032.94,
-      "athDate": "2026-06-01"
+      "ath": 2992.43,
+      "athDate": "2026-08-20"
     },
     "VWRA.L": {
       "price": 193.5,
-      "change": null,
-      "changePct": null,
+      "change": -0.7,
+      "changePct": -0.3605,
       "high52": 202.3,
-      "low52": 140.22,
-      "volume": 172058,
+      "low52": 0.0,
+      "volume": 95,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF",
       "ath": 195.62,
@@ -75,20 +75,20 @@
     },
     "XNAS.L": {
       "price": 67.8,
-      "change": null,
-      "changePct": null,
+      "change": -0.65,
+      "changePct": -0.9496,
       "high52": 71.25,
-      "low52": 53.27,
-      "volume": 49809,
+      "low52": 0.0,
+      "volume": 10755,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
       "ath": 70.45,
       "athDate": "2026-06-14"
     },
     "USDSGD=X": {
-      "price": 1.2719,
-      "change": 0.0006,
-      "changePct": 0.0464,
+      "price": 1.2699,
+      "change": null,
+      "changePct": null,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -188,7 +188,7 @@
       "sma200": 332.72,
       "vsSma200Pct": 2.39,
       "high52": 408.61,
-      "low52": 199.43
+      "low52": 201.3
     },
     "AMZN": {
       "name": "Amazon.com, Inc.",
@@ -214,7 +214,7 @@
       "sma200": 369.17,
       "vsSma200Pct": -1.39,
       "high52": 495.0,
-      "low52": 286.17
+      "low52": 287.17
     },
     "CRWD": {
       "name": "CrowdStrike Holdings, Inc.",
@@ -370,7 +370,7 @@
       "sma200": 71.26,
       "vsSma200Pct": 29.29,
       "high52": 142.35,
-      "low52": 22.78
+      "low52": 23.65
     },
     "LAC": {
       "name": "Lithium Americas Corp.",
