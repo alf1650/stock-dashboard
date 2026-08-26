@@ -55,13 +55,15 @@ def fetch_quote(yahoo_symbol):
     }
 
 
-def fetch_ath(yahoo_symbol):
-    """Fetch the all-time high closing price and its date using max available daily history."""
-    url = f"{YAHOO_BASE}/{urllib.parse.quote(yahoo_symbol)}?interval=1d&range=max"
+def fetch_ath(yahoo_symbol, current_price=None):
+    """Fetch the all-time high closing price and its date using 10y of daily history.
+    Note: range=max returns monthly bars for old data, masking recent ATHs."""
+    url = f"{YAHOO_BASE}/{urllib.parse.quote(yahoo_symbol)}?interval=1d&range=10y"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=15) as resp:
         data = json.loads(resp.read())
     result = data["chart"]["result"][0]
+    meta = result["meta"]
     closes = result["indicators"]["quote"][0].get("close", [])
     timestamps = result.get("timestamp", [])
     best_price = None
@@ -70,6 +72,11 @@ def fetch_ath(yahoo_symbol):
         if c is not None and (best_price is None or c > best_price):
             best_price = c
             best_ts = timestamps[i] if i < len(timestamps) else None
+    # Yahoo Finance max-range sometimes lags by a few days; cross-check with current price
+    fallback_price = current_price or meta.get("regularMarketPrice")
+    if fallback_price and (best_price is None or fallback_price > best_price):
+        best_price = fallback_price
+        best_ts = meta.get("regularMarketTime")
     if best_price is None:
         return None, None
     ath_date = datetime.fromtimestamp(best_ts, tz=timezone.utc).strftime("%Y-%m-%d") if best_ts else None
@@ -139,7 +146,7 @@ def main():
             q = fetch_quote(yahoo_sym)
             # Fetch ATH from max history
             try:
-                ath, ath_date = fetch_ath(yahoo_sym)
+                ath, ath_date = fetch_ath(yahoo_sym, current_price=q["price"])
                 q["ath"] = ath
                 q["athDate"] = ath_date
             except Exception as e2:

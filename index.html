@@ -100,6 +100,7 @@ header h1{font-size:18px;color:#2d3436;letter-spacing:.5px}
   <h1>📊 Market Dashboard</h1>
   <div class="hdr-right">
     <span id="lastUpdated">--</span>
+    <button id="btnRefresh" onclick="refreshData()" style="margin-left:12px;padding:4px 10px;font-size:11px;cursor:pointer;border:1px solid #636e72;background:transparent;color:#636e72;border-radius:4px">↺ Refresh</button>
   </div>
 </header>
 
@@ -176,12 +177,12 @@ header h1{font-size:18px;color:#2d3436;letter-spacing:.5px}
 const CORRECTION_LEVELS = [-5, -10, -15, -20, -25, -30];
 
 const INDICES = [
-  { code:'DJI',  yahoo:'^DJI',  name:'Dow Jones Industrial',       recordHigh:50512.79 },
-  { code:'NDX',  yahoo:'^NDX',  name:'Nasdaq 100',                 recordHigh:26182.10 },
-  { code:'SPX',  yahoo:'^GSPC', name:'S&P 500',                    recordHigh:7002.28  },
-  { code:'RUT',  yahoo:'^RUT',  name:'Russell 2000',               recordHigh:2735.10  },
-  { code:'VWRA', yahoo:'VWRA.L',name:'Vanguard FTSE All-World ETF',recordHigh:178.64   },
-  { code:'XNAS', yahoo:'XNAS.L',name:'iShares Nasdaq 100 ETF (£)', recordHigh:60.63    },
+  { code:'DJI',  yahoo:'^DJI',  name:'Dow Jones Industrial',       recordHigh:53577.40 },
+  { code:'NDX',  yahoo:'^NDX',  name:'Nasdaq 100',                 recordHigh:30276.35 },
+  { code:'SPX',  yahoo:'^GSPC', name:'S&P 500',                    recordHigh:7798.99  },
+  { code:'RUT',  yahoo:'^RUT',  name:'Russell 2000',               recordHigh:3010.02  },
+  { code:'VWRA', yahoo:'VWRA.L',name:'Vanguard FTSE All-World ETF',recordHigh:195.62   },
+  { code:'XNAS', yahoo:'XNAS.L',name:'iShares Nasdaq 100 ETF (£)', recordHigh:70.45    },
 ];
 
 const VIX = { code:'VIX', yahoo:'^VIX', recordHigh:65.73 };
@@ -501,6 +502,9 @@ async function refreshData() {
 }
 
 let isRefreshing = false;
+
+// Auto-refresh every 5 minutes
+setInterval(() => { if (!isRefreshing) refreshData(); }, 5 * 60 * 1000);
 
 /* ── Load data from data.json (fast initial render) ───────────── */
 async function loadFromDataJson() {
