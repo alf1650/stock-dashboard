@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-31 06:33:34",
+  "updated": "2026-08-31 13:18:48",
   "data": {
     "^VIX": {
-      "price": 14.43,
-      "change": -0.08,
-      "changePct": -0.5513,
+      "price": 15.37,
+      "change": 0.94,
+      "changePct": 6.5142,
       "high52": 35.3,
-      "low52": 0.0,
+      "low52": 13.38,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
