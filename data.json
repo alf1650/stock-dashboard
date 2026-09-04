@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-03 20:49:31",
+  "updated": "2026-09-04 06:25:42",
   "data": {
     "^VIX": {
       "price": 14.32,
       "change": -0.88,
       "changePct": -5.7895,
       "high52": 35.3,
-      "low52": 13.38,
+      "low52": 0.0,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
@@ -31,7 +31,7 @@
       "changePct": 1.1632,
       "high52": 30762.2,
       "low52": 22841.42,
-      "volume": 1201280000,
+      "volume": 1218380000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 30660.6,
@@ -63,11 +63,11 @@
     },
     "VWRA.L": {
       "price": 195.32,
-      "change": null,
-      "changePct": null,
+      "change": 1.92,
+      "changePct": 0.9928,
       "high52": 202.3,
-      "low52": 140.22,
-      "volume": 301000,
+      "low52": 0.0,
+      "volume": 5,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF USD Accumulation",
       "ath": 195.82,
@@ -75,20 +75,20 @@
     },
     "XNAS.L": {
       "price": 68.45,
-      "change": null,
-      "changePct": null,
+      "change": 0.82,
+      "changePct": 1.2125,
       "high52": 71.25,
-      "low52": 53.46,
-      "volume": 79163,
+      "low52": 0.0,
+      "volume": 21310,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
       "ath": 70.99,
       "athDate": "2026-06-02"
     },
     "USDSGD=X": {
-      "price": 1.267,
-      "change": -0.0039,
-      "changePct": -0.3069,
+      "price": 1.2666,
+      "change": null,
+      "changePct": null,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -253,7 +253,7 @@
       "sma200": 602.61,
       "vsSma200Pct": 59.0,
       "high52": 1255.0,
-      "low52": 118.52
+      "low52": 125.66
     },
     "ARM": {
       "name": "Arm Holdings plc",
@@ -279,7 +279,7 @@
       "sma200": 151.07,
       "vsSma200Pct": 38.23,
       "high52": 329.88,
-      "low52": 61.44
+      "low52": 62.47
     },
     "NFLX": {
       "name": "Netflix, Inc.",
