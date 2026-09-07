@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07 18:41:10",
+  "updated": "2026-09-07 18:50:01",
   "data": {
     "^VIX": {
       "price": 15.3,
@@ -86,9 +86,9 @@
       "athDate": "2026-06-02"
     },
     "USDSGD=X": {
-      "price": 1.266,
-      "change": -0.0007,
-      "changePct": -0.0561,
+      "price": 1.2661,
+      "change": -0.0006,
+      "changePct": -0.0482,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
