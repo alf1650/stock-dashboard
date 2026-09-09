@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-08 20:49:34",
+  "updated": "2026-09-09 06:27:05",
   "data": {
     "^VIX": {
       "price": 15.72,
       "change": 0.42,
       "changePct": 2.7451,
       "high52": 35.3,
-      "low52": 13.38,
+      "low52": 0.0,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
@@ -19,7 +19,7 @@
       "changePct": -1.1761,
       "high52": 54744.33,
       "low52": 45057.28,
-      "volume": 418002087,
+      "volume": 420435811,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
       "ath": 54349.12,
@@ -31,7 +31,7 @@
       "changePct": -0.1234,
       "high52": 30762.2,
       "low52": 22841.42,
-      "volume": 1302988000,
+      "volume": 1315063000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 30660.6,
@@ -43,7 +43,7 @@
       "changePct": -0.584,
       "high52": 7816.7,
       "low52": 6316.91,
-      "volume": 2903497000,
+      "volume": 2922644000,
       "currency": "USD",
       "name": "S&P 500",
       "ath": 7798.99,
@@ -63,11 +63,11 @@
     },
     "VWRA.L": {
       "price": 194.9,
-      "change": null,
-      "changePct": null,
+      "change": -0.2,
+      "changePct": -0.1025,
       "high52": 202.3,
-      "low52": 140.22,
-      "volume": 186044,
+      "low52": 0.0,
+      "volume": 359,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF USD Accumulation",
       "ath": 195.82,
@@ -75,20 +75,20 @@
     },
     "XNAS.L": {
       "price": 68.65,
-      "change": null,
-      "changePct": null,
+      "change": 0.07,
+      "changePct": 0.1021,
       "high52": 71.25,
-      "low52": 53.46,
-      "volume": 102544,
+      "low52": 0.0,
+      "volume": 1,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
       "ath": 70.99,
       "athDate": "2026-06-02"
     },
     "USDSGD=X": {
-      "price": 1.265,
-      "change": -0.0005,
-      "changePct": -0.0356,
+      "price": 1.2636,
+      "change": null,
+      "changePct": null,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -188,7 +188,7 @@
       "sma200": 336.21,
       "vsSma200Pct": 0.64,
       "high52": 408.61,
-      "low52": 233.23
+      "low52": 235.84
     },
     "AMZN": {
       "name": "Amazon.com, Inc.",
@@ -253,7 +253,7 @@
       "sma200": 610.34,
       "vsSma200Pct": 63.89,
       "high52": 1255.0,
-      "low52": 131.56
+      "low52": 138.34
     },
     "ARM": {
       "name": "Arm Holdings plc",
@@ -279,7 +279,7 @@
       "sma200": 152.5,
       "vsSma200Pct": 47.81,
       "high52": 329.88,
-      "low52": 65.19
+      "low52": 66.14
     },
     "NFLX": {
       "name": "Netflix, Inc.",
