@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-10 20:50:02",
+  "updated": "2026-09-11 06:25:33",
   "data": {
     "^VIX": {
       "price": 17.84,
       "change": 1.38,
       "changePct": 8.384,
       "high52": 35.3,
-      "low52": 13.38,
+      "low52": 0.0,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
@@ -19,7 +19,7 @@
       "changePct": -0.6043,
       "high52": 54744.33,
       "low52": 45057.28,
-      "volume": 397900645,
+      "volume": 401279317,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
       "ath": 54349.12,
@@ -31,7 +31,7 @@
       "changePct": -1.081,
       "high52": 30762.2,
       "low52": 22841.42,
-      "volume": 1162076000,
+      "volume": 1173806000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 30660.6,
@@ -43,7 +43,7 @@
       "changePct": -0.5848,
       "high52": 7816.7,
       "low52": 6316.91,
-      "volume": 2742729000,
+      "volume": 2763396000,
       "currency": "USD",
       "name": "S&P 500",
       "ath": 7798.99,
@@ -63,11 +63,11 @@
     },
     "VWRA.L": {
       "price": 192.12,
-      "change": null,
-      "changePct": null,
+      "change": -1.18,
+      "changePct": -0.6105,
       "high52": 202.3,
-      "low52": 140.22,
-      "volume": 185005,
+      "low52": 0.0,
+      "volume": 124,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF USD Accumulation",
       "ath": 195.82,
@@ -75,20 +75,20 @@
     },
     "XNAS.L": {
       "price": 67.83,
-      "change": null,
-      "changePct": null,
+      "change": -0.44,
+      "changePct": -0.6445,
       "high52": 71.25,
-      "low52": 53.46,
-      "volume": 13667,
+      "low52": 0.0,
+      "volume": 72,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
       "ath": 70.99,
       "athDate": "2026-06-02"
     },
     "USDSGD=X": {
-      "price": 1.2678,
-      "change": 0.0036,
-      "changePct": 0.284,
+      "price": 1.2673,
+      "change": null,
+      "changePct": null,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -253,7 +253,7 @@
       "sma200": 618.23,
       "vsSma200Pct": 58.1,
       "high52": 1255.0,
-      "low52": 147.61
+      "low52": 153.21
     },
     "ARM": {
       "name": "Arm Holdings plc",
@@ -304,7 +304,7 @@
       "week4Pct": -0.22,
       "sma200": 167.89,
       "vsSma200Pct": -8.9,
-      "high52": 331.0,
+      "high52": 329.5,
       "low52": 114.5
     },
     "NOW": {
