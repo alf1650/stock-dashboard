@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-17 20:49:11",
+  "updated": "2026-09-18 06:26:05",
   "data": {
     "^VIX": {
       "price": 15.44,
       "change": -2.27,
       "changePct": -12.8176,
       "high52": 35.3,
-      "low52": 13.38,
+      "low52": 0.0,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
@@ -31,7 +31,7 @@
       "changePct": 1.734,
       "high52": 30762.2,
       "low52": 22841.42,
-      "volume": 1243967000,
+      "volume": 1251579000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 30660.6,
@@ -50,8 +50,8 @@
       "athDate": "2026-08-13"
     },
     "^RUT": {
-      "price": 2874.6296,
-      "change": 15.8195,
+      "price": 2874.63,
+      "change": 15.8199,
       "changePct": 0.5534,
       "high52": 3069.71,
       "low52": 2303.46,
@@ -63,11 +63,11 @@
     },
     "VWRA.L": {
       "price": 192.42,
-      "change": null,
-      "changePct": null,
+      "change": 0.58,
+      "changePct": 0.3023,
       "high52": 202.3,
-      "low52": 140.22,
-      "volume": 238561,
+      "low52": 0.0,
+      "volume": 50,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF USD Accumulation",
       "ath": 195.82,
@@ -75,11 +75,11 @@
     },
     "XNAS.L": {
       "price": 68.27,
-      "change": null,
-      "changePct": null,
+      "change": 0.52,
+      "changePct": 0.7675,
       "high52": 71.25,
-      "low52": 53.46,
-      "volume": 17943,
+      "low52": 0.0,
+      "volume": 309,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
       "ath": 70.99,
@@ -123,7 +123,7 @@
       "sma200": 352.92,
       "vsSma200Pct": 54.45,
       "high52": 584.73,
-      "low52": 149.85
+      "low52": 154.78
     },
     "TSLA": {
       "name": "Tesla, Inc.",
