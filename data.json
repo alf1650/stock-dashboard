@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-21 20:49:34",
+  "updated": "2026-09-22 06:26:31",
   "data": {
     "^VIX": {
       "price": 14.87,
       "change": 0.06,
       "changePct": 0.4051,
       "high52": 35.3,
-      "low52": 13.38,
+      "low52": 0.0,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
@@ -19,7 +19,7 @@
       "changePct": 0.7085,
       "high52": 54744.33,
       "low52": 45057.28,
-      "volume": 443039235,
+      "volume": 444358134,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
       "ath": 54349.12,
@@ -31,7 +31,7 @@
       "changePct": 2.8275,
       "high52": 30762.2,
       "low52": 22841.42,
-      "volume": 1616622000,
+      "volume": 1624755000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 30660.6,
@@ -43,7 +43,7 @@
       "changePct": 1.4927,
       "high52": 7816.7,
       "low52": 6316.91,
-      "volume": 3267080000,
+      "volume": 3278075000,
       "currency": "USD",
       "name": "S&P 500",
       "ath": 7798.99,
@@ -66,8 +66,8 @@
       "change": 2.76,
       "changePct": 1.44,
       "high52": 202.3,
-      "low52": 140.22,
-      "volume": 422392,
+      "low52": 0.0,
+      "volume": 30,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF USD Accumulation",
       "ath": 195.82,
@@ -78,17 +78,17 @@
       "change": 1.93,
       "changePct": 2.8237,
       "high52": 71.25,
-      "low52": 53.46,
-      "volume": 24629,
+      "low52": 0.0,
+      "volume": 4015,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
       "ath": 70.99,
       "athDate": "2026-06-02"
     },
     "USDSGD=X": {
-      "price": 1.2763,
-      "change": 0.0003,
-      "changePct": 0.0219,
+      "price": 1.2756,
+      "change": null,
+      "changePct": null,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -122,7 +122,7 @@
       "week4Pct": 30.06,
       "sma200": 356.63,
       "vsSma200Pct": 72.59,
-      "high52": 616.68,
+      "high52": 616.69,
       "low52": 154.78
     },
     "TSLA": {
@@ -161,7 +161,7 @@
       "week4Pct": 34.8,
       "sma200": 624.63,
       "vsSma200Pct": 18.67,
-      "high52": 785.73,
+      "high52": 770.6,
       "low52": 520.26
     },
     "MSFT": {
@@ -304,7 +304,7 @@
       "week4Pct": 1.43,
       "sma200": 165.99,
       "vsSma200Pct": -10.5,
-      "high52": 329.5,
+      "high52": 325.0,
       "low52": 114.5
     },
     "NOW": {
@@ -370,7 +370,7 @@
       "sma200": 77.55,
       "vsSma200Pct": 57.03,
       "high52": 142.35,
-      "low52": 28.73
+      "low52": 28.82
     },
     "LAC": {
       "name": "Lithium Americas Corp.",
