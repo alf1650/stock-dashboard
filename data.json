@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23 20:17:26",
+  "updated": "2026-09-23 20:39:06",
   "data": {
     "^VIX": {
       "price": 15.18,
@@ -19,7 +19,7 @@
       "changePct": null,
       "high52": 54744.33,
       "low52": 45057.28,
-      "volume": 425438075,
+      "volume": 428073697,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
       "ath": 54349.12,
@@ -31,7 +31,7 @@
       "changePct": null,
       "high52": 30770.63,
       "low52": 22841.42,
-      "volume": 1229335000,
+      "volume": 1234921000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 30660.6,
@@ -43,14 +43,14 @@
       "changePct": null,
       "high52": 7816.7,
       "low52": 6316.91,
-      "volume": 2960865000,
+      "volume": 2977393000,
       "currency": "USD",
       "name": "S&P 500",
       "ath": 7798.99,
       "athDate": "2026-08-13"
     },
     "^RUT": {
-      "price": 2838.667,
+      "price": 2838.66,
       "change": null,
       "changePct": null,
       "high52": 3069.71,
@@ -86,9 +86,9 @@
       "athDate": "2026-06-02"
     },
     "USDSGD=X": {
-      "price": 1.2798,
-      "change": 0.0048,
-      "changePct": 0.3804,
+      "price": 1.2801,
+      "change": 0.0051,
+      "changePct": 0.4039,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -296,14 +296,14 @@
     },
     "ORCL": {
       "name": "Oracle Corporation",
-      "price": 144.52,
+      "price": 144.56,
       "currency": "USD",
-      "dailyPct": -3.14,
-      "week1Pct": 0.95,
-      "week2Pct": -10.59,
-      "week4Pct": -0.17,
+      "dailyPct": -3.11,
+      "week1Pct": 0.98,
+      "week2Pct": -10.56,
+      "week4Pct": -0.14,
       "sma200": 165.35,
-      "vsSma200Pct": -12.6,
+      "vsSma200Pct": -12.57,
       "high52": 322.54,
       "low52": 114.5
     },
