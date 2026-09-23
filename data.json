@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23 20:39:06",
+  "updated": "2026-09-23 20:49:22",
   "data": {
     "^VIX": {
       "price": 15.18,
@@ -31,7 +31,7 @@
       "changePct": null,
       "high52": 30770.63,
       "low52": 22841.42,
-      "volume": 1234921000,
+      "volume": 1235664000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 30660.6,
