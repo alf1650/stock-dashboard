@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-23 06:27:36",
+  "updated": "2026-09-23 13:16:41",
   "data": {
     "^VIX": {
-      "price": 14.21,
-      "change": -0.66,
-      "changePct": -4.4385,
+      "price": 14.29,
+      "change": null,
+      "changePct": null,
       "high52": 35.3,
-      "low52": 0.0,
+      "low52": 13.38,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
@@ -29,7 +29,7 @@
       "price": 30732.396,
       "change": 250.0464,
       "changePct": 0.8203,
-      "high52": 30770.629,
+      "high52": 30770.63,
       "low52": 22841.42,
       "volume": 1329914000,
       "currency": "USD",
@@ -62,31 +62,31 @@
       "athDate": "2026-08-14"
     },
     "VWRA.L": {
-      "price": 194.96,
-      "change": 0.54,
-      "changePct": 0.2778,
+      "price": 194.46,
+      "change": null,
+      "changePct": null,
       "high52": 202.3,
-      "low52": 0.0,
-      "volume": 30,
+      "low52": 140.22,
+      "volume": 71859,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF USD Accumulation",
       "ath": 195.82,
       "athDate": "2026-08-17"
     },
     "XNAS.L": {
-      "price": 71.09,
-      "change": 0.81,
-      "changePct": 1.1525,
-      "high52": 71.25,
-      "low52": 0.0,
-      "volume": 16525,
+      "price": 71.18,
+      "change": null,
+      "changePct": null,
+      "high52": 71.4,
+      "low52": 53.46,
+      "volume": 42314,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
-      "ath": 71.09,
-      "athDate": "2026-09-22"
+      "ath": 71.18,
+      "athDate": "2026-09-23"
     },
     "USDSGD=X": {
-      "price": 1.2764,
+      "price": 1.2788,
       "change": null,
       "changePct": null,
       "high52": 1.3096,
@@ -161,7 +161,7 @@
       "week4Pct": 33.95,
       "sma200": 624.63,
       "vsSma200Pct": 17.93,
-      "high52": 770.6,
+      "high52": 761.11,
       "low52": 520.26
     },
     "MSFT": {
@@ -370,7 +370,7 @@
       "sma200": 77.55,
       "vsSma200Pct": 59.72,
       "high52": 142.35,
-      "low52": 28.82
+      "low52": 29.23
     },
     "LAC": {
       "name": "Lithium Americas Corp.",
