@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-02 20:52:05",
+  "updated": "2026-10-05 06:40:55",
   "data": {
     "^VIX": {
       "price": 15.31,
       "change": -1.08,
       "changePct": -6.5894,
       "high52": 35.3,
-      "low52": 13.38,
+      "low52": 0.0,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
@@ -19,7 +19,7 @@
       "changePct": 0.4917,
       "high52": 54744.33,
       "low52": 45057.28,
-      "volume": 547926550,
+      "volume": 548953568,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
       "ath": 54349.12,
@@ -29,9 +29,9 @@
       "price": 30807.932,
       "change": 306.3715,
       "changePct": 1.0044,
-      "high52": 31017.525,
+      "high52": 31017.53,
       "low52": 22841.42,
-      "volume": 1219396000,
+      "volume": 1227080000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 30807.93,
@@ -43,7 +43,7 @@
       "changePct": 0.734,
       "high52": 7816.7,
       "low52": 6316.91,
-      "volume": 3118955000,
+      "volume": 3130028000,
       "currency": "USD",
       "name": "S&P 500",
       "ath": 7798.99,
@@ -63,8 +63,8 @@
     },
     "VWRA.L": {
       "price": 192.74,
-      "change": null,
-      "changePct": null,
+      "change": 2.48,
+      "changePct": 1.3035,
       "high52": 202.3,
       "low52": 140.22,
       "volume": 226089,
@@ -75,8 +75,8 @@
     },
     "XNAS.L": {
       "price": 71.56,
-      "change": null,
-      "changePct": null,
+      "change": 1.19,
+      "changePct": 1.6911,
       "high52": 72.01,
       "low52": 53.46,
       "volume": 15492,
@@ -86,9 +86,9 @@
       "athDate": "2026-10-02"
     },
     "USDSGD=X": {
-      "price": 1.2786,
-      "change": -0.0016,
-      "changePct": -0.1242,
+      "price": 1.2813,
+      "change": 0.0011,
+      "changePct": 0.0867,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -109,7 +109,7 @@
       "week4Pct": 2.41,
       "sma200": 200.71,
       "vsSma200Pct": 16.56,
-      "high52": 237.87,
+      "high52": 237.88,
       "low52": 164.27
     },
     "AMD": {
@@ -123,7 +123,7 @@
       "sma200": 374.72,
       "vsSma200Pct": 69.17,
       "high52": 645.46,
-      "low52": 163.14
+      "low52": 188.22
     },
     "TSLA": {
       "name": "Tesla, Inc.",
