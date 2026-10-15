@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-15 06:26:24",
+  "updated": "2026-10-15 13:17:19",
   "data": {
     "^VIX": {
-      "price": 16.87,
-      "change": 1.6,
-      "changePct": 10.4781,
+      "price": 17.44,
+      "change": 0.57,
+      "changePct": 3.3788,
       "high52": 35.3,
-      "low52": 0.0,
+      "low52": 13.38,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
@@ -62,31 +62,31 @@
       "athDate": "2026-08-14"
     },
     "VWRA.L": {
-      "price": 191.78,
-      "change": -1.34,
-      "changePct": -0.6939,
+      "price": 190.74,
+      "change": null,
+      "changePct": null,
       "high52": 202.3,
-      "low52": 0.0,
-      "volume": 636,
+      "low52": 140.22,
+      "volume": 188449,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF USD Accumulation",
       "ath": 195.82,
       "athDate": "2026-08-17"
     },
     "XNAS.L": {
-      "price": 70.03,
-      "change": -0.61,
-      "changePct": -0.8635,
+      "price": 68.74,
+      "change": null,
+      "changePct": null,
       "high52": 72.8,
-      "low52": 0.0,
-      "volume": 19,
+      "low52": 53.46,
+      "volume": 95528,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
       "ath": 72.73,
       "athDate": "2026-10-06"
     },
     "USDSGD=X": {
-      "price": 1.2826,
+      "price": 1.2825,
       "change": null,
       "changePct": null,
       "high52": 1.3096,
@@ -382,7 +382,7 @@
       "week4Pct": -25.54,
       "sma200": 4.14,
       "vsSma200Pct": -50.0,
-      "high52": 10.52,
+      "high52": 9.02,
       "low52": 2.06
     }
   }
