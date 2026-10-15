@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-14 20:50:37",
+  "updated": "2026-10-15 06:26:24",
   "data": {
     "^VIX": {
       "price": 16.87,
       "change": 1.6,
       "changePct": 10.4781,
       "high52": 35.3,
-      "low52": 13.38,
+      "low52": 0.0,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
@@ -31,7 +31,7 @@
       "changePct": -2.0238,
       "high52": 31361.37,
       "low52": 22841.42,
-      "volume": 1295909000,
+      "volume": 1302843000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 31224.47,
@@ -63,11 +63,11 @@
     },
     "VWRA.L": {
       "price": 191.78,
-      "change": null,
-      "changePct": null,
+      "change": -1.34,
+      "changePct": -0.6939,
       "high52": 202.3,
-      "low52": 140.22,
-      "volume": 160632,
+      "low52": 0.0,
+      "volume": 636,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF USD Accumulation",
       "ath": 195.82,
@@ -75,20 +75,20 @@
     },
     "XNAS.L": {
       "price": 70.03,
-      "change": null,
-      "changePct": null,
+      "change": -0.61,
+      "changePct": -0.8635,
       "high52": 72.8,
-      "low52": 53.46,
-      "volume": 14465,
+      "low52": 0.0,
+      "volume": 19,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
       "ath": 72.73,
       "athDate": "2026-10-06"
     },
     "USDSGD=X": {
-      "price": 1.2847,
-      "change": 0.0051,
-      "changePct": 0.397,
+      "price": 1.2826,
+      "change": null,
+      "changePct": null,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -253,7 +253,7 @@
       "sma200": 711.72,
       "vsSma200Pct": 28.44,
       "high52": 1255.0,
-      "low52": 187.42
+      "low52": 192.4
     },
     "ARM": {
       "name": "Arm Holdings plc",
