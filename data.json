@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-16 20:50:35",
+  "updated": "2026-10-19 06:34:42",
   "data": {
     "^VIX": {
       "price": 19.99,
       "change": 3.53,
       "changePct": 21.4459,
       "high52": 35.3,
-      "low52": 13.38,
+      "low52": 0.0,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
@@ -31,7 +31,7 @@
       "changePct": -2.4989,
       "high52": 31361.37,
       "low52": 22841.42,
-      "volume": 1453966000,
+      "volume": 1467756000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 31224.47,
@@ -63,8 +63,8 @@
     },
     "VWRA.L": {
       "price": 191.68,
-      "change": null,
-      "changePct": null,
+      "change": 0.2,
+      "changePct": 0.1045,
       "high52": 202.3,
       "low52": 140.22,
       "volume": 172918,
@@ -75,8 +75,8 @@
     },
     "XNAS.L": {
       "price": 68.51,
-      "change": null,
-      "changePct": null,
+      "change": -0.56,
+      "changePct": -0.8108,
       "high52": 72.8,
       "low52": 53.46,
       "volume": 75656,
@@ -86,9 +86,9 @@
       "athDate": "2026-10-06"
     },
     "USDSGD=X": {
-      "price": 1.2789,
-      "change": -0.0026,
-      "changePct": -0.206,
+      "price": 1.2794,
+      "change": -0.0021,
+      "changePct": -0.167,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -304,7 +304,7 @@
       "week4Pct": -13.13,
       "sma200": 160.19,
       "vsSma200Pct": -19.95,
-      "high52": 304.28,
+      "high52": 289.24,
       "low52": 114.5
     },
     "NOW": {
