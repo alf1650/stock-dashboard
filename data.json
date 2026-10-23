@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23 20:40:54",
+  "updated": "2026-10-23 20:50:49",
   "data": {
     "^VIX": {
       "price": 19.45,
@@ -19,7 +19,7 @@
       "changePct": -1.2348,
       "high52": 54744.33,
       "low52": 45057.28,
-      "volume": 345561367,
+      "volume": 348502492,
       "currency": "USD",
       "name": "Dow Jones Industrial Average",
       "ath": 54349.12,
@@ -31,7 +31,7 @@
       "changePct": -0.004,
       "high52": 31361.37,
       "low52": 22841.42,
-      "volume": 1034075000,
+      "volume": 1034437000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 31224.47,
