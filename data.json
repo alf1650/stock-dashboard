@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-23 06:25:51",
+  "updated": "2026-10-23 13:15:53",
   "data": {
     "^VIX": {
-      "price": 19.03,
-      "change": 2.35,
-      "changePct": 14.0887,
+      "price": 20.22,
+      "change": 1.19,
+      "changePct": 6.2533,
       "high52": 35.3,
-      "low52": 0.0,
+      "low52": 13.38,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
@@ -62,24 +62,24 @@
       "athDate": "2026-08-14"
     },
     "VWRA.L": {
-      "price": 189.66,
-      "change": -2.62,
-      "changePct": -1.3626,
+      "price": 188.84,
+      "change": -0.82,
+      "changePct": -0.4324,
       "high52": 202.3,
-      "low52": 0.0,
-      "volume": 11,
+      "low52": 140.22,
+      "volume": 90467,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF USD Accumulation",
       "ath": 195.82,
       "athDate": "2026-08-17"
     },
     "XNAS.L": {
-      "price": 67.6,
-      "change": -1.59,
-      "changePct": -2.298,
+      "price": 67.051,
+      "change": -0.549,
+      "changePct": -0.8121,
       "high52": 72.8,
-      "low52": 0.0,
-      "volume": 6383,
+      "low52": 53.46,
+      "volume": 50344,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
       "ath": 72.73,
@@ -188,7 +188,7 @@
       "sma200": 341.32,
       "vsSma200Pct": -5.01,
       "high52": 408.61,
-      "low52": 251.85
+      "low52": 255.32
     },
     "AMZN": {
       "name": "Amazon.com, Inc.",
