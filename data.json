@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-23 20:50:49",
+  "updated": "2026-10-26 06:34:26",
   "data": {
     "^VIX": {
       "price": 19.45,
       "change": 0.42,
       "changePct": 2.207,
       "high52": 35.3,
-      "low52": 13.38,
+      "low52": 0.0,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
@@ -31,7 +31,7 @@
       "changePct": -0.004,
       "high52": 31361.37,
       "low52": 22841.42,
-      "volume": 1034437000,
+      "volume": 1043947000,
       "currency": "USD",
       "name": "NASDAQ-100",
       "ath": 31224.47,
@@ -50,8 +50,8 @@
       "athDate": "2026-10-06"
     },
     "^RUT": {
-      "price": 2775.8987,
-      "change": -8.1313,
+      "price": 2775.899,
+      "change": -8.131,
       "changePct": -0.2921,
       "high52": 3069.71,
       "low52": 2303.46,
@@ -86,9 +86,9 @@
       "athDate": "2026-10-06"
     },
     "USDSGD=X": {
-      "price": 1.2783,
-      "change": 0.0016,
-      "changePct": 0.1253,
+      "price": 1.2786,
+      "change": 0.0019,
+      "changePct": 0.1488,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -188,7 +188,7 @@
       "sma200": 341.31,
       "vsSma200Pct": -6.18,
       "high52": 408.61,
-      "low52": 255.32
+      "low52": 264.28
     },
     "AMZN": {
       "name": "Amazon.com, Inc.",
@@ -304,7 +304,7 @@
       "week4Pct": -7.98,
       "sma200": 158.55,
       "vsSma200Pct": -20.43,
-      "high52": 287.19,
+      "high52": 287.0,
       "low52": 114.5
     },
     "NOW": {
@@ -382,7 +382,7 @@
       "week4Pct": -24.73,
       "sma200": 4.05,
       "vsSma200Pct": -48.89,
-      "high52": 7.0,
+      "high52": 6.96,
       "low52": 2.04
     }
   }
