@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-03 06:16:33",
+  "updated": "2026-11-03 13:10:36",
   "data": {
     "^VIX": {
-      "price": 21.15,
-      "change": 1.73,
-      "changePct": 8.9083,
+      "price": 21.35,
+      "change": 0.2,
+      "changePct": 0.9456,
       "high52": 35.3,
-      "low52": 0.0,
+      "low52": 13.38,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
@@ -62,33 +62,33 @@
       "athDate": "2026-08-14"
     },
     "VWRA.L": {
-      "price": 189.7,
-      "change": 1.16,
-      "changePct": 0.6153,
+      "price": 187.74,
+      "change": -1.96,
+      "changePct": -1.0332,
       "high52": 202.3,
       "low52": 140.22,
-      "volume": 198705,
+      "volume": 416168,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF USD Accumulation",
       "ath": 195.82,
       "athDate": "2026-08-17"
     },
     "XNAS.L": {
-      "price": 66.29,
-      "change": 0.21,
-      "changePct": 0.3178,
+      "price": 65.23,
+      "change": -1.06,
+      "changePct": -1.599,
       "high52": 72.8,
       "low52": 53.46,
-      "volume": 56381,
+      "volume": 24490,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
       "ath": 72.73,
       "athDate": "2026-10-06"
     },
     "USDSGD=X": {
-      "price": 1.2799,
-      "change": 0.0018,
-      "changePct": 0.144,
+      "price": 1.2811,
+      "change": 0.003,
+      "changePct": 0.2379,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -239,7 +239,7 @@
       "week4Pct": -29.52,
       "sma200": 32.67,
       "vsSma200Pct": -6.83,
-      "high52": 53.01,
+      "high52": 51.4,
       "low52": 19.48
     },
     "MU": {
@@ -304,7 +304,7 @@
       "week4Pct": -16.33,
       "sma200": 156.61,
       "vsSma200Pct": -23.87,
-      "high52": 265.62,
+      "high52": 255.28,
       "low52": 114.5
     },
     "NOW": {
@@ -317,7 +317,7 @@
       "week4Pct": -22.1,
       "sma200": 114.86,
       "vsSma200Pct": -7.71,
-      "high52": 184.428,
+      "high52": 181.726,
       "low52": 81.24
     },
     "SNOW": {
@@ -343,8 +343,8 @@
       "week4Pct": -26.77,
       "sma200": 177.74,
       "vsSma200Pct": -22.45,
-      "high52": 342.8,
-      "low52": 135.47
+      "high52": 325.45,
+      "low52": 135.46
     },
     "SHOP": {
       "name": "Shopify Inc.",
