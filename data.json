@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-04 06:16:43",
+  "updated": "2026-11-04 13:10:08",
   "data": {
     "^VIX": {
-      "price": 20.83,
-      "change": -0.32,
-      "changePct": -1.513,
+      "price": 18.62,
+      "change": -2.21,
+      "changePct": -10.6097,
       "high52": 35.3,
-      "low52": 0.0,
+      "low52": 13.38,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
@@ -62,33 +62,33 @@
       "athDate": "2026-08-14"
     },
     "VWRA.L": {
-      "price": 188.08,
-      "change": -1.62,
-      "changePct": -0.854,
+      "price": 189.8,
+      "change": 1.72,
+      "changePct": 0.9145,
       "high52": 202.3,
       "low52": 140.22,
-      "volume": 631765,
+      "volume": 131691,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF USD Accumulation",
       "ath": 195.82,
       "athDate": "2026-08-17"
     },
     "XNAS.L": {
-      "price": 65.38,
-      "change": -0.91,
-      "changePct": -1.3728,
+      "price": 65.35,
+      "change": -0.03,
+      "changePct": -0.0459,
       "high52": 72.8,
       "low52": 53.46,
-      "volume": 74302,
+      "volume": 216697,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
       "ath": 72.73,
       "athDate": "2026-10-06"
     },
     "USDSGD=X": {
-      "price": 1.2796,
-      "change": 0.0005,
-      "changePct": 0.0367,
+      "price": 1.2777,
+      "change": -0.0014,
+      "changePct": -0.1118,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -304,7 +304,7 @@
       "week4Pct": -12.83,
       "sma200": 156.29,
       "vsSma200Pct": -19.26,
-      "high52": 255.28,
+      "high52": 252.4,
       "low52": 114.5
     },
     "NOW": {
@@ -317,7 +317,7 @@
       "week4Pct": -20.88,
       "sma200": 114.77,
       "vsSma200Pct": -4.89,
-      "high52": 181.726,
+      "high52": 178.524,
       "low52": 81.24
     },
     "SNOW": {
@@ -343,7 +343,7 @@
       "week4Pct": -21.69,
       "sma200": 177.26,
       "vsSma200Pct": -17.95,
-      "high52": 325.45,
+      "high52": 324.8,
       "low52": 135.46
     },
     "SHOP": {
