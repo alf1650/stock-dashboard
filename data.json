@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-06 06:17:34",
+  "updated": "2026-11-06 13:10:11",
   "data": {
     "^VIX": {
-      "price": 28.18,
-      "change": 11.57,
-      "changePct": 69.6568,
+      "price": 27.37,
+      "change": -0.81,
+      "changePct": -2.8744,
       "high52": 35.3,
-      "low52": 0.0,
+      "low52": 13.38,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
@@ -62,33 +62,33 @@
       "athDate": "2026-08-14"
     },
     "VWRA.L": {
-      "price": 186.28,
-      "change": -4.36,
-      "changePct": -2.287,
+      "price": 183.5,
+      "change": -2.78,
+      "changePct": -1.4924,
       "high52": 202.3,
       "low52": 140.22,
-      "volume": 636583,
+      "volume": 536707,
       "currency": "USD",
       "name": "Vanguard FTSE All-World UCITS ETF USD Accumulation",
       "ath": 195.82,
       "athDate": "2026-08-17"
     },
     "XNAS.L": {
-      "price": 63.21,
-      "change": -2.9,
-      "changePct": -4.3866,
+      "price": 62.66,
+      "change": -0.55,
+      "changePct": -0.8701,
       "high52": 72.8,
       "low52": 53.46,
-      "volume": 86534,
+      "volume": 227212,
       "currency": "USD",
       "name": "Xtrackers NASDAQ 100 UCITS ETF 1C",
       "ath": 72.73,
       "athDate": "2026-10-06"
     },
     "USDSGD=X": {
-      "price": 1.2803,
-      "change": 0.0016,
-      "changePct": 0.1228,
+      "price": 1.2816,
+      "change": 0.0029,
+      "changePct": 0.2244,
       "high52": 1.3096,
       "low52": 1.2588,
       "volume": 0,
@@ -317,7 +317,7 @@
       "week4Pct": -26.75,
       "sma200": 114.57,
       "vsSma200Pct": -10.66,
-      "high52": 175.8,
+      "high52": 175.0,
       "low52": 81.24
     },
     "SNOW": {
@@ -344,7 +344,7 @@
       "sma200": 176.43,
       "vsSma200Pct": -22.45,
       "high52": 324.8,
-      "low52": 133.51
+      "low52": 133.5
     },
     "SHOP": {
       "name": "Shopify Inc.",
