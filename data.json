@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-26 20:49:11",
+  "updated": "2026-11-27 06:17:46",
   "data": {
     "^VIX": {
       "price": 26.8,
       "change": -1.49,
       "changePct": -5.2669,
       "high52": 40.03,
-      "low52": 13.38,
+      "low52": 0.0,
       "volume": 0,
       "currency": "USD",
       "name": "CBOE Volatility Index",
@@ -86,9 +86,9 @@
       "athDate": "2026-10-06"
     },
     "USDSGD=X": {
-      "price": 1.2902,
-      "change": 0.0008,
-      "changePct": 0.0659,
+      "price": 1.2887,
+      "change": -0.0013,
+      "changePct": -0.1008,
       "high52": 1.299,
       "low52": 1.2588,
       "volume": 0,
